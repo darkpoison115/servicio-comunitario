@@ -1,0 +1,14 @@
+matematica.pdf
+*.log
+*.aux
+*.out
+*.toc
+*.run.xml
+*.bbl
+*.bcf
+*.blg
+*.lof
+*.lot
+*.fdb_latexmk
+*.fls
+*.dvi

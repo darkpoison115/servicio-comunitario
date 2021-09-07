@@ -1,0 +1,93 @@
+
+\documentclass[12pt]{article}
+
+%\usepackage{fontspec}
+%\setmainfont{Times New Roman}
+
+\usepackage{tocbibind}
+
+\usepackage[a4paper]{geometry}
+\geometry{top=2.54cm, bottom=2.54cm, left=2.54cm, right=2.54cm}
+
+\usepackage[spanish]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{float}
+
+\usepackage{graphicx} % graficos
+\graphicspath{ {./images/} }
+\usepackage{setspace}%interlineado agrega:
+% \doublespacing \onehalfspace \singlespace \spacing{x}
+\spacing{1.5}
+\setlength{\parindent}{0pt}
+\pagestyle{headings}
+\setlength{\parskip}{12pt}
+
+
+\usepackage{csquotes}
+\usepackage[bookmarks = true, colorlinks=true, linkcolor = black, citecolor = black, menucolor = black, urlcolor = black]{hyperref}
+
+%****************************************************
+%     secciones con formato especifico
+
+\newcommand{\comillas}[1]{``#1"}
+
+
+\begin{document}
+
+
+\section{General}
+\subsection{Fracciones}
+\subsection{Notacion Cientifica}
+\subsection{Teorema de pitagoras}
+\subsection{Potenciacion}
+\subsection{Teoria combinatoria}
+
+
+
+
+
+
+\section{Ecuaciones}
+
+\subsection{Inecuaciones}
+\subsection{Sistema de Ecuaciones}
+
+
+
+
+\section{Funciones}
+\subsection{Función Lineal}
+\subsection{Función Cuadratica}
+\subsection{Función Polinomica}
+\subsection{Conicas}
+\subsection{Función Exponencial}
+\subsection{Función Logaritmica}
+\subsection{Funciones Trigonometricas}
+
+
+
+
+
+\section{Polinomios}
+
+\subsection{Productos notables}
+
+\subsection{Factorizacion}
+\subsection{Regla de Ruffini}
+\subsection{Coeficientes indeterminados}
+\subsection{Radicales}
+
+
+
+
+\section{Vectores}
+
+\subsection{vectores}
+
+\subsection{matrices}
+
+
+
+
+\end{document}
