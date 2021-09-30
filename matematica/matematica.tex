@@ -1,21 +1,23 @@
 
 \documentclass[12pt]{article}
 
-%\usepackage{fontspec}
-%\setmainfont{Times New Roman}
+% allows for temporary adjustment of side margins
+\usepackage{chngpage}
 
 \usepackage{tocbibind}
 \usepackage{amsfonts}
+
 \usepackage[a4paper]{geometry}
 \geometry{top=2.54cm, bottom=2.54cm, left=2.54cm, right=2.54cm}
 
-\usepackage[spanish]{babel}
+\usepackage[spanish,es-noshorthands]{babel}
 \usepackage[utf8]{inputenc}
+
 \usepackage[T1]{fontenc}
 \usepackage{float}
-
 \usepackage{graphicx} % graficos
 \graphicspath{ {./contenido/images} }
+
 \usepackage{setspace}%interlineado agrega:
 % \doublespacing \onehalfspace \singlespace \spacing{x}
 \spacing{1.5}
@@ -23,16 +25,25 @@
 \usepackage{color}
 \definecolor{AzulClaro}{rgb}{0.8,0.85,1}
 \definecolor{RojoClaro}{rgb}{1,0.85,0.8}
+\definecolor{Red}{rgb}{1,0,0}
+\definecolor{Blue}{rgb}{0,0,1}
+
 \usepackage{amsmath}
 \usepackage{array}
+
 \usepackage{csquotes}
 \usepackage[bookmarks = true, colorlinks=true, linkcolor = black, citecolor = black, menucolor = black, urlcolor = black]{hyperref}
 
+\usepackage{tikz}
 %****************************************************
 %     secciones con formato especifico
 
 \newcommand{\comillas}[1]{``#1"}
 \newcommand\ddfrac[2]{\frac{\displaystyle #1}{\displaystyle #2}}
+
+\newcommand{\p}{\textcolor{Blue}{+ + + +}}
+\newcommand{\n}{\textcolor{Red}{- - - - -}}
+
 
 \begin{document}
 
@@ -42,21 +53,13 @@
 
 \include{contenido/general}
 
-
 \include{contenido/ecuaciones}
 
 
-
-
-\section{Funciones}
 \include{contenido/funciones}
-
-
 
 \section{Polinomios}
 \include{contenido/polinomios}
-
-
 
 \section{Vectores}
 \include{contenido/vectores}
