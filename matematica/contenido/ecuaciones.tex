@@ -1925,7 +1925,7 @@ Y la gráfica es:
     y/o $X,Y,\cdots,Z$ son \textbf{variables independientes}.
 
     Los sistemas tienen la forma general:
-    \begin{equation}
+    \begin{equation*}
         \left.
         \begin{matrix}
             F_1(x_1,\cdots,x_n)=0\\
@@ -1933,7 +1933,7 @@ Y la gráfica es:
             F_n(x_1,\cdots,x_n)=0
         \end{matrix}
         \hspace*{0.5cm}\right\rbrace
-    \end{equation}
+    \end{equation*}
 
     Y a su vez, se dividen por sus posibilidades de resolución en:
 
@@ -1949,7 +1949,7 @@ Y la gráfica es:
             negativo, incompatibilidad de resultados).
     \end{itemize}
 
-    El sistema incompatible indeterminado siempre dependerá de alguna variable,
+    El sistema compatible indeterminado siempre dependerá de alguna variable,
     quedara expresado en términos de función.
 
     El compatible determinado siempre dará algún valor \textbf{único} para cada
@@ -1966,8 +1966,7 @@ Y la gráfica es:
     \end{itemize}
 
     \textbf{Cabe resaltar que:} existen otros métodos, como lo son el método
-    gráfico y los métodos matriciales
-    de Gauss Jordán y kramer.
+    gráfico y los métodos matriciales de Gauss Jordán y kramer.
 
     \subsubsection*{Sustitución} \label{Sustitucion}
 
@@ -1990,32 +1989,460 @@ Y la gráfica es:
                     resultado. Ese resultado se sustituye en ec1 y se obtienen
                     todos los valores
                 \item si sol no tiene 1 única variable, despejar alguna otra incógnita
-                    y sustituirlo en otra ecuación (llámesele ec3) y repetir hasta
+                    y sustituir todos los despejes de incógnitas,
+                    en otra ecuación (llámesele ec3) y repetir hasta
                     obtener una única variable.
             \end{itemize}
     \end{enumerate}
 
+Ejemplos:
+
+
+    \begin{equation*}
+        \left.
+        \begin{matrix}
+            x &+& y &=3\\
+            2x &-& y &=0
+        \end{matrix}
+        \hspace*{0.5cm}\right\rbrace
+    \end{equation*}
+
+    Tomando la primera ecuación, procedemos a despejar $x$:
+
+    $$(ec1)\hspace*{1cm} x+y=3 \rightarrow x=3-y $$
+
+    Luego, sustituimos en las segunda ecuación:
+
+    \begin{align*}
+        2x-y &= 0		\\
+        2(3-y)-y &=0    \\
+        2\times3 -2y-y&= 0\\
+        6-3y &= 0   \\
+        -3y &= -6   \\
+        y &= \frac{-6}{-3} \\
+        y &= 2\\
+    \end{align*}
+
+    y sustituyendo $ Y=2 $ en la $ec1$
+
+
+    $$ x=3-y \rightarrow x=3-2, \ x=1 $$
+
+    Y el sistema tiene una única solución, dada por los valores:
+    $ x=1 $  $ y=2 $.
+
+
+    Otro ejemplo:
+
+    \begin{equation*}
+        \left.
+        \begin{matrix}
+            \displaystyle\frac{x}{2} &+& 3y &-& z &= 3 \\
+            2x &+& 4y &+&5z &= 1\\
+            3x &+& 5y &+& 4z &=0
+        \end{matrix}
+        \hspace*{0.5cm}\right\rbrace
+    \end{equation*}
+
+    Despejamos de la primera ecuación $x$:
+
+    \begin{align*}
+        (ec1)\hspace*{1cm} \displaystyle\frac{x}{2} +3y-z&=3 \\
+        \displaystyle\frac{x}{2} &= 3-3y+z\\
+        x&= 2\times(3-3y+z)\\
+        x&= 6-6y+2z
+    \end{align*}
+
+    Como observamos, hay mas de una variable, por lo tanto, debemos despejar
+    una segunda ecuación, y sustituir en una tercera, todos los valores para
+    quedar con una sola incógnita:
+
+    De la segunda ecuación, tenemos:
+
+    \begin{align*}
+        2x+4y+5z &= 1	\\
+        \text{sustituyendo}\\
+        2\times(6-6y+2z)+4y+5z &= 1\\
+        \text{12 \colorbox{RojoClaro}{-12$y$} \colorbox{AzulClaro}{+4$z$} \colorbox{RojoClaro}{+4$y$} \colorbox{AzulClaro}{+5$z$} }&= \text{1}\\
+        -8y + 9z &= -11\\
+        \text{Despejamos y} \\
+        -8y&= -11-9z \\
+        (ec2)\hspace*{1cm} y &= \frac{11+9z}{8}\\
+    \end{align*}
+
+    Luego, procedemos a sustituir en la tercera ecuación las expresiones obtenidas
+    de $ ec1 $  y $ ec2 $
+
+    \begin{align*}
+        3x + 5y + 4z &= 0   \\
+        \text{sustituimos, }ec1:\\
+        3(6-6y+2z) +5y + 4z &= 0 \\
+        \text{18 \colorbox{RojoClaro}{-18$y$} \colorbox{AzulClaro}{+6$z$} \colorbox{RojoClaro}{+5$y$} \colorbox{AzulClaro}{+4$z$}} &= 0\\
+        -13y+10z+18&=0\\
+        \text{sustituimos, }ec2:\\
+        -13\times(\frac{11+9z}{8})+10z &= -18\\
+        \frac{-13\times(11+9z)+ 8\times10z}{8}&=-18\\
+        -143-117z+80z &=-18\times8\\
+        -117z+80z&=-144+143\\
+        -37z&=-1\\
+        z&=\frac{1}{37}
+    \end{align*}
+
+    Regresandonos en las ecuaciones obtenidas, sustituimos
+    $\displaystyle z= \frac{1}{37}$  en $ ec2 $:
+
+    \begin{align*}
+        y &=\frac{11+9z}{8}  		\\
+        y &= \frac{11+9\times\frac{1}{37} }{8}\\
+        y &= \frac{11\times37+9}{8\times37} \\
+        y&= \frac{52}{37} \\
+    \end{align*}
+
+    Finalmente, sustituimos estos valores en $ ec1$:
+
+    \begin{align*}
+        x&= 6-6y+2z	\\
+        x &= 6- 6\times \frac{52}{37} + 2\times \frac{1}{37}\\
+        x&= 6- \frac{312}{37} + \frac{2}{37} \\
+        x &= \frac{6\times37 - 312 + 2}{37}\\
+        x &=\frac{-88}{37}
+    \end{align*}
+
+    y el sistema esta resuelto con:
+    \begin{align*}
+        x &=\frac{-88}{37} ;& y&=\frac{52}{37} ;& z&=\frac{1}{37}  		\\
+    \end{align*}
+
+
+    \textbf{Como se observa,} este método se volverá mas complicado mientras mayor
+    ecuaciones-variables se tengan.
+
+    \subsubsection*{Igualación} \label{Igualacion}
+
+    Este método es muy parecido al de sustitución, consiste en despejar una misma
+    variable en las ecuaciones obtenidas e igualarlas (la variable despejada se
+    usa como punto común), de esta forma se obtienen
+    nuevas ecuaciones las cuales tienen 1 variable menos, se repite el proceso
+    hasta tener 1 única ecuación de 1 sola variable, luego se despeja y los valores
+    obtenidos se sustituyen en las ecuaciones previamente obtenidas para conseguir
+    los resultados.
+
+    Usando los mismos ejemplos que en sustitución:
+
+
+    \begin{equation*}
+        \left.
+        \begin{matrix}
+            x &+& y &=3\\
+            2x &-& y &=0
+        \end{matrix}
+        \hspace*{0.5cm}\right\rbrace
+    \end{equation*}
+
+   procedemos a despejar $x$:
+
+    \begin{align*}
+        x+y &=3     & 2x-y&=0 		\\
+        x&=3-y      & x&= \frac{y}{2}
+    \end{align*}
+
+    Procedemos a igualar en la x:
+
+    \begin{align*}
+        3-y &= 	\frac{y}{2} 	\\
+        3 &= \frac{y}{2}+y \\
+        3 &= \frac{y+2y}{2} \\
+        3\times2 &= 3y \\
+        y &= \frac{6}{3} \\
+        y&=2
+    \end{align*}
+
+    luego, sustituimos $y=2$ en cualquiera de las ecuaciones anteriores, usando
+    la segunda:
+
+    \begin{align*}
+        x&= \frac{y}{2}  		\\
+        x&= \frac{2}{2} \\
+        x&=1
+    \end{align*}
+
+    y el sistema tiene como solución $ x=1 $ y $ y=2 $ (mismo resultado que por
+    sustitución ya que la   solución es única).
+
+    Otro ejemplo:
+
+   \begin{equation*}
+        \left.
+        \begin{matrix}
+            \displaystyle\frac{x}{2} &+& 3y &-& z &= 3 \\
+            2x &+& 4y &+&5z &= 1\\
+            3x &+& 5y &+& 4z &=0
+        \end{matrix}
+        \hspace*{0.5cm}\right\rbrace
+    \end{equation*}
+
+    Despejamos la variable $x$:
+
+    \begin{align*}
+        \displaystyle\frac{x}{2} +3y-z &=3   & 2x+4y+5z &= 1             & 3x+5y+4z &= 0 \\
+        \displaystyle\frac{x}{2} &= 3-3y+z   & 2x &= 1-4y-5z             & 3x &= -5y-4z  \\
+        x&= 2\times(3-3y+z)     & x &= \frac{1-4y-5z}{2}    & x &= \frac{-5y-4z}{3} \\
+        x&= 6-6y+2z
+    \end{align*}
+
+
+    Procedemos a igualar las ecuaciones, tenemos que usarlas todas al menos una
+    vez, por esto se juntaran la primera con la segunda y la primera con la tercera
+    (hay 2 variables restantes así que solo necesitamos 2 ecuaciones):
+
+    \begin{align*}
+        6-6y+2z &= \frac{1-4y-5z}{2}    & 6-6y+2z &= \frac{-5y-4z}{3}  		\\
+        2\times(6-6y+2z )&= 1-4y-5z     & 3\times(6-6y+2z) &= -5y-4z        \\
+        12-12y+4z &= 1-4y-5z            & 18-18y+6z &= -5y -4z \\
+        \text{Procedemos a despejar la }y:\\
+        -12y+4y &= 1-5z-12-4z           & -18y+5y &= -4z-18-6z \\
+        -8y &= -11 -9z                  & -13y    &= -10z -18 \\
+        y &= \frac{-11-9z}{-8}          & y &= \frac{-10z-18}{-13} \\
+        y&= \frac{11+9z}{8}             & y&= \frac{10z+18}{13}
+    \end{align*}
+
+    Ahora que tenemos las 2 ecuaciones despejadas, las volvemos a igualar:
+
+    \begin{align*}
+        \frac{11+9z}{8}  &= \frac{10z+18}{13}  		\\
+        13\times(11+9z)  &= 8\times(10z+18)     \\
+        143+117z &= 80z +144\\
+        117z-80z &= 144-143\\
+        37z     &= 1 \\
+        z &= \frac{1}{37}
+    \end{align*}
+
+    Y luego, sustituyendo en alguna ecuación previa, usando la primera ecuación
+    despejada de 2 variables  (izquierda):
+
+    \begin{align*}
+        y &= \frac{11+9z}{8} \\
+        y &= \frac{11+9\times \frac{1}{37} }{8}\\
+        y&= \frac{11\times37+9}{37\times8}  \\
+        y&= \frac{52}{37} \\
+    \end{align*}
+
+    Finalmente, sustituimos estos valores en la primera ecuación:
+
+    \begin{align*}
+        x&= 6-6y+2z	\\
+        x &= 6- 6\times \frac{52}{37} + 2\times \frac{1}{37}\\
+        x&= 6- \frac{312}{37} + \frac{2}{37} \\
+        x &= \frac{6\times37 - 312 + 2}{37}\\
+        x &=\frac{-88}{37}
+    \end{align*}
+
+    y el sistema esta resuelto, dando los mismos valores que por sustitución:
+    \begin{align*}
+        x &=\frac{-88}{37} ;& y&=\frac{52}{37} ;& z&=\frac{1}{37}  		\\
+    \end{align*}
+
+
+    \subsubsection*{Reducción} \label{Reduccion}
+
+    Este método consiste en reducir la cantidad de ecuaciones-incógnitas que hay
+    presente, mediante la suma o resta de las ecuaciones, además de la multiplicación
+    o dividiesen de las mismas por un numero entero.
+
+    Para realizar esto, se busca que ambas ecuaciones tengan el mismo coeficiente
+    en una determinada variable, luego restarlas si el signo es igual y sumarlas
+    si el signo es distinto. de esta forma se obtiene una(s) nueva(s) ecuación(es)
+    y se repite el proceso hasta obtener el resultado de una variable, y se
+    van sustituyendo los valores progresivamente, como en los métodos anteriores.
+
+    Ejemplos:
+
+    \begin{equation*}
+        \left.
+        \begin{matrix}
+            x &+& y &=3\\
+            2x &-& y &=0
+        \end{matrix}
+        \hspace*{0.5cm}\right\rbrace
+    \end{equation*}
+
+    Por facilidad, se procede a ordenar de forma que estén los términos iguales
+    uno debajo de otro:
+
+    \begin{equation*}
+        \left.
+        \begin{matrix}
+            x &+& y &=3\\
+            2x &-& y &=0
+        \end{matrix}
+        \hspace*{0.5cm}\right\rbrace
+    \end{equation*}
+
+    luego, se multiplica (o divide) una ecuación por un numero el cual de como resultado el
+    mismo coeficiente de la otra ecuación en una variable determinada, puede ser
+    con el mismo signo(se restaran) o con signos contrarios (se sumaran). Usando
+    el signo contrario, se multiplicara la primera ecuación por -2 y se sumara:
+
+    \begin{equation*}
+        \left.
+        \begin{matrix}
+            -2\times(x &+& y &=3)\\
+            2x &-& y &=0
+        \end{matrix}
+        \hspace*{0.5cm}\right\rbrace
+    \end{equation*}
+
+    \begin{equation*}
+        \begin{matrix}
+            -2x &-& 2y &=&-6\\
+            2x &-& y &=&0\\
+            \hline
+            0x &-& 3y &=&-6\\
+        \end{matrix}
+    \end{equation*}
+
+
+    $$ y=\frac{-6}{-3} \rightarrow y=2 $$
+
+    Luego, sustituimos en la primera ecuación:
+    \begin{align*}
+        x+y &=3 \\
+        x+2 &=3 \\
+        x&=3-2\\
+        x&=1
+    \end{align*}
+
+    Otro ejemplo:
+
+   \begin{equation*}
+        \left.
+        \begin{matrix}
+            \displaystyle\frac{x}{2} &+& 3y &-& z &= 3 \\
+            2x &+& 4y &+&5z &= 1\\
+            3x &+& 5y &+& 4z &=0
+        \end{matrix}
+        \hspace*{0.5cm}\right\rbrace
+    \end{equation*}
+
+
+    En este caso, se toman grupos de 2 ecuaciones. tomando 1 con 2 y 2 con 3:
+
+   \begin{align*}
+        \left.
+        \begin{matrix}
+            \displaystyle\frac{x}{2} &+& 3y &-& z &= 3 \\
+            2x &+& 4y &+&5z &= 1\\
+        \end{matrix}
+        \hspace*{0.5cm}\right\rbrace\hspace*{1cm}&
+        \left.
+        \begin{matrix}
+            2x &+& 4y &+&5z &= 1\\
+            3x &+& 5y &+& 4z &=0
+        \end{matrix}
+        \hspace*{0.5cm}\right\rbrace
+    \end{align*}
+
+    Luego, procedemos a multiplicar, para eliminar la variable $x$:
+
+    En el primer conjunto de ecuaciones, la primera ecuación por -4
+
+    En el segundo conjunto de ecuaciones, la primera por -3 y la segunda por 2
+
+    Y sumamos:
+
+   \begin{align*}
+        \left.
+        \begin{matrix}
+           -4\times(\displaystyle\frac{x}{2} &+& 3y &-& z &= 3) \\
+            2x &+& 4y &+&5z &= 1\\
+        \end{matrix}
+        \hspace*{0.5cm}\right\rbrace\hspace*{1cm}&
+        \left.
+        \begin{matrix}
+            -3\times(2x &+& 4y &+&5z &= 1)\\
+            2\times(3x &+& 5y &+& 4z &=0)
+        \end{matrix}
+        \hspace*{0.5cm}\right\rbrace
+    \end{align*}
 
 
 
 
+   \begin{align*}
+        \begin{matrix}
+           -2x &-& 12y &+& 4z &= -12 \\
+            2x &+& 4y &+&5z &= 1\\
+            \hline
+            0x &-& 8y &+&9z &= -11
+        \end{matrix}
+        \hspace*{1cm}&
+        \begin{matrix}
+            -6x &-& 12y &-&15z &= -3\\
+            6x &+& 10y &+& 8z &=0\\
+            \hline
+            0x &-&2y &-&-7 &= -3
+        \end{matrix}
+   \end{align*}
+
+   Luego, se procede a resolver el sistema generado con las dos ecuaciones resultantes:
 
 
+    \begin{equation*}
+        \left.
+        \begin{matrix}
+           -8y &+&9z &= -11\\
+            -2y &-&-7 &= -3
+        \end{matrix}
+        \hspace*{0.5cm}\right\rbrace
+    \end{equation*}
+
+    Multiplicando la segunda ecuación por -4:
+    \begin{equation*}
+        \left.
+        \begin{matrix}
+           -8y &+&9z &= -11\\
+            -4\times(-2y &-&-7 &= -3)
+        \end{matrix}
+        \hspace*{0.5cm}\right\rbrace
+    \end{equation*}
+
+    \begin{equation*}
+        \begin{matrix}
+           -8y &+&9z &= -11\\
+            8y &+&28 &= 12\\
+            \hline
+            0y &+&37z &=1
+        \end{matrix}
+    \end{equation*}
 
 
+    $$ z = \frac{1}{37}  $$
+
+    luego sustituimos en alguna de las ecuaciones anteriores, sustituyendo en
+    la primera:
 
 
+    \begin{align*}
+        -8y &+&9z &= -11\\
+        y &= \frac{-11-9z}{8}
+        y &= \frac{11+9z}{8} \\
+        y &= \frac{11+9\times \frac{1}{37} }{8}\\
+        y&= \frac{11\times37+9}{37\times8}  \\
+        y&= \frac{52}{37} \\
+    \end{align*}
 
+    Finalmente, sustituimos estos valores en la primera ecuación:
 
+    \begin{align*}
+        x&= 6-6y+2z	\\
+        x &= 6- 6\times \frac{52}{37} + 2\times \frac{1}{37}\\
+        x&= 6- \frac{312}{37} + \frac{2}{37} \\
+        x &= \frac{6\times37 - 312 + 2}{37}\\
+        x &=\frac{-88}{37}
+    \end{align*}
 
-
-
-
-
-
-
-
-
-
-
+    y el sistema esta resuelto, dando los mismos valores que por sustitución o igualación:
+    \begin{align*}
+        x &=\frac{-88}{37} ;& y&=\frac{52}{37} ;& z&=\frac{1}{37}  		\\
+    \end{align*}
 
