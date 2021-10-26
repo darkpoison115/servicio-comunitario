@@ -1,6 +1,48 @@
-  - \usepackage{color}
-  - \usepackage{xcolor}
 
+
+\documentclass[12pt]{article}
+
+% allows for temporary adjustment of side margins
+\usepackage{chngpage}
+
+\usepackage{tocbibind}
+\usepackage{amsfonts}
+
+\usepackage[a4paper]{geometry}
+\geometry{top=2.54cm, bottom=2.54cm, left=2.54cm, right=2.54cm}
+
+\usepackage[spanish,es-noshorthands]{babel}
+\usepackage[utf8]{inputenc}
+
+\usepackage[T1]{fontenc}
+\usepackage{float}
+\usepackage{graphicx} % graficos
+\graphicspath{ {./contenido/images} }
+
+\usepackage{setspace}%interlineado agrega:
+% \doublespacing \onehalfspace \singlespace \spacing{x}
+\spacing{1.5}
+
+\usepackage{color}
+
+\usepackage{amsmath}
+\usepackage{array}
+
+\usepackage{csquotes}
+\usepackage[bookmarks = true, colorlinks=true, linkcolor = black, citecolor = black, menucolor = black, urlcolor = black]{hyperref}
+
+\usepackage{tikz}
+%****************************************************
+%     secciones con formato especifico
+
+\newcommand{\comillas}[1]{``#1"}
+\newcommand\ddfrac[2]{\frac{\displaystyle #1}{\displaystyle #2}}
+
+\newcommand{\p}{\textcolor{Blue}{+ + + +}}
+\newcommand{\n}{\textcolor{Red}{- - - - -}}
+\newcommand{\R}[1]{\colorbox{Red}{#1}}
+
+\begin{document}
 
 \section{Ecuaciones}
 \subsection{Ecuaciones}\label{Ecuaciones}
@@ -10,8 +52,9 @@ operadores numéricos; estos se relacionan mediante operaciones como
 suma, resta, multiplicación, división, potenciación, entre otras; y el objetivo
 es conseguir el valor, o valores, de las variables que satisfacen la igualdad.
 Una ecuación tiene la forma:
+\p
 
- \colorbox{blue!25}{13$x$ - 9}= \colorbox{AzulClaro}{5 + $x$}
+ \colorbox{Thistle}{13x - 9}= \colorbox{SkyBlue}{5 + x}
 
 Donde cada color representa un miembro de la ecuación, $x$ es la variable y se
 puede observar que en cada miembro hay operaciones  suma, resta, y multiplicación
@@ -2067,7 +2110,7 @@ Ejemplos:
         2x+4y+5z &= 1	\\
         \text{sustituyendo}\\
         2\times(6-6y+2z)+4y+5z &= 1\\
-        \text{12 \colorbox{RojoClaro}{-12$y$} \colorbox{AzulClaro}{+4$z$} \colorbox{RojoClaro}{+4$y$} \colorbox{AzulClaro}{+5$z$} }&= \text{1}\\
+        \text{12 \colorbox{Thistle}{-12$y$} \colorbox{SkyBlue}{+4$z$} \colorbox{Thistle}{+4$y$} \colorbox{SkyBlue}{+5$z$} }&= \text{1}\\
         -8y + 9z &= -11\\
         \text{Despejamos y} \\
         -8y&= -11-9z \\
@@ -2081,7 +2124,7 @@ Ejemplos:
         3x + 5y + 4z &= 0   \\
         \text{sustituimos, }ec1:\\
         3(6-6y+2z) +5y + 4z &= 0 \\
-        \text{18 \colorbox{RojoClaro}{-18$y$} \colorbox{AzulClaro}{+6$z$} \colorbox{RojoClaro}{+5$y$} \colorbox{AzulClaro}{+4$z$}} &= 0\\
+        \text{18 \colorbox{Thistle}{-18$y$} \colorbox{SkyBlue}{+6$z$} \colorbox{Thistle}{+5$y$} \colorbox{SkyBlue}{+4$z$}} &= 0\\
         -13y+10z+18&=0\\
         \text{sustituimos, }ec2:\\
         -13\times(\frac{11+9z}{8})+10z &= -18\\
@@ -2449,4 +2492,4 @@ Ejemplos:
     \begin{align*}
         x &=\frac{-88}{37} ;& y&=\frac{52}{37} ;& z&=\frac{1}{37}  		\\
     \end{align*}
-
+\end{document}

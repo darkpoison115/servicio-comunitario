@@ -1,6 +1,273 @@
-
 \section{Funciones}
 
+    Una funcion, como definicion formal, es una regla que asigna a todo
+    elemento en el conjunto de partida
+    un \textbf{unico} elemento en el conjunto de llegada. En si, esta puede verse
+    como la relacion que hay entre dos conjuntos de numeros, y se dice que
+    una magnitud, numero, es funcion de otra si el valor de la primera depende
+    del valor de la segunda. De esta forma, se obtienen 3 partes fundamentales
+    de las funciones:
+
+    \begin{itemize}
+        \item Conjunto de partida, dominio:
+
+            Es el conjunto formado por todos los posibles valores que puede \textbf{tomar}
+            una funcion. Corresponde a la \textbf{variable independiente}.
+
+        \item Conjunto de llegada, rango
+
+            Es el conjunto formado por todos los posibles valores que puede \textbf{dar
+            como resultado} una funcion, estos dependen del dominio y la expresion
+            que rigen la funcion. Corresponde a la \textbf{variable dependiente}.
+
+        \item Ecuacion la cual rige la funcion (formula $f(x)= expresion$)
+
+            Esta es una ecuacion, la cual puede ser resuelta para una serie de valores
+            (dominio) y da como resultado, un conjunto de valores (rango), y cada
+            valor en el dominio puede dar un unico elemento en el rango.
+    \end{itemize}
+
+    Una funcion suele tener la siguiente forma:
+
+    $$ variable_dependiente = expresion $$
+
+    Donde la expresion viene dada en terminos de la variable independiente (una letra), es
+    decir, $ expresion= $  \textbf{ecuacion en terminos de la variable independiente}
+
+    y la variable dependiente puede ser una letra (diferente a la variable independiente)
+    o esto: $ f(varible_independiente) $ una $ f $ que representa funcion, y entre
+    corchetes, la variable independientes. Algunos ejemplos son:
+
+    \textbf{Para identificarlas:} La letra que esta sola, a un lado de la
+    igualdad es la variable dependiente y la que esta siendo multiplicada, dividida,
+    sumada, dentro de una raiz, etc. Es la variable independiente
+
+    $$ f(x) = x^2 $$
+    con:
+
+    $ f(x) $: variable dependiente.
+
+    $x$: variable independiente.
+
+    $$ y = x+8 $$
+    con:
+
+    $ y $: variable dependiente.
+
+    $x$: variable independiente.
+
+    $$ f(g) = g-95 $$
+    con:
+
+    $ f(g) $: variable dependiente.
+
+    $g$: variable independiente.
+
+    $$ h = 975x $$
+        con:
+
+    $ h$: variable dependiente.
+
+    $x$: variable independiente.
+
+\subsubsection*{Operaciones con funciones} \label{Operaciones_con_funciones}
+
+    Las funciones pueden ser sumadas, restadas, multiplicadas, divididas
+    y evaluadas.
+
+
+\subsubsection*{Suma y resta de funciones} \label{Suma_de_funciones}
+
+La suma de dos funciones consiste en sumar/restar sus miembros algebraicamente y el
+dominio resultante vendra dado por la interseccion de los dominios de las
+funciones individuales.
+
+Sean: $ f(x),\ g(x) $ funciones cualesquiera, con sus dominios $ Dom_f,\ Dom_g $
+
+    $$ f(x)\pm g(x)=(f\pm g)(x)= miembros_f + miembros_g $$
+
+y el dominio resultante va a ser dado por:
+
+
+    $$ Dom_{f\pm g}= Dom_f \cap Dom_g $$
+
+
+    Ejemplos:
+
+    $ f(x)= 45x,\ Dom_f=\{4,5,8,70,100\} $
+
+    $ g(x)=4 +95x,\ Dom_g= \{1,2,3,5,8,10,100\}$
+\\
+
+    $ f(x)+g(x) $
+
+    \begin{align*}
+        f(x)+g(x) &= 45x+4+95x 		\\
+        f(x)+ g(x)&= 140x + 4
+    \end{align*}
+
+    y el dominio viene dado por:
+    $$ Dom_{f+g} = Dom_f \cap Dom_g =\{4,5,8,70,100\} \cap \{1,2,3,5,8,10,100\}=\{5,8,100\} $$
+
+
+    $ f(x)-g(x) $
+
+    \begin{align*}
+        f(x)-g(x) &= 45x-(4+95x) 		\\
+        f(x)- g(x)&= 45x - 4 -95x\\
+        f(x)- g(x)&= -50x - 4
+    \end{align*}
+
+    y el dominio viene dado por:
+    $$ Dom_{f-g} = Dom_f \cap Dom_g =\{4,5,8,70,100\} \cap \{1,2,3,5,8,10,100\}=\{5,8,100\} $$
+
+
+    $ g(x)-f(x) $
+
+    \begin{align*}
+        g(x)-f(x) &= 45x-(4+95x) 		\\
+        g(x)-f(x)&= 45x - 4 -95x\\
+        g(x)-f(x)&= -50x - 4
+    \end{align*}
+
+    y el dominio viene dado por:
+    $$ Dom_{g-f} = Dom_f \cap Dom_g =\{4,5,8,70,100\} \cap \{1,2,3,5,8,10,100\}=\{5,8,100\} $$
+
+\subsubsection*{Multiplicación y division de funciones} \label{Multiplicacion_de_funciones}
+
+La multiplicacion/division de funciones se da de la misma forma que la suma o
+resta, es decir se multiplican o dividen los terminos.
+
+La multiplicacion seguira las propiedades asociativa y/o conmutativa para simplificarse.
+
+En el caso de la division, esta se expresa como una fraccion, siendo numerador
+y denominador dividendo y divisor respectivamente. Luego se procede a simplificar
+si es posible.
+
+Los dominios vienen dados por la interseccion en la multiplicacion y la interseccion
+con la exclusion de los puntos donde el denominador se haga 0 en la division
+(ya que la division por 0 no esta definida).
+
+
+Ejemplos:
+
+Sean: $ f(x),\ g(x) $ funciones cualesquiera, con sus dominios $ Dom_f,\ Dom_g $
+
+    $$ f(x) \times g(x)=(f \times g)(x)= miembros_f \times miembros_g $$
+
+y el dominio resultante va a ser dado por:
+    $$ Dom_{f\times g}= Dom_f \cap Dom_g $$
+
+    $$ \frac{f(x)}{g(x)}=( \frac{f}{g})(x)= \frac{miembros_f}{miembros_g} $$
+
+y el dominio resultante va a ser dado por:
+    $$ Dom_{\frac{f}{g}}= Dom_f \cap Dom_g -\{x|g(x)=0\}$$
+
+    Ejemplos:
+
+    $ f(x)= 45x,\ Dom_f=\{0,-4/95,4,5,8,70,100\} $
+
+    $ g(x)=4 +95x,\ Dom_g= \{0,-4/95, 1,2,3,5,8,10,100\}$
+
+
+    $ f(x)\times g(x) $
+
+    \begin{align*}
+        f(x)\times g(x) &= 45x\times(4+95x)		\\
+        f(x)\times g(x) &= 45x\times4 + 45x\times95x\\
+        f(x)\times g(x) &= 180x+4275x^2
+    \end{align*}
+
+    y el dominio viene dado por:
+
+    $$ Dom_{g\times f} = Dom_f \cap Dom_g =\{0,-4/95,4,5,8,70,100\} \cap \{0,-4/95,1,2,3,5,8,10,100\}=\{0,-4/95,5,8,100\} $$
+
+    $ \frac{f(x)}{g(x)}  $
+
+    \begin{align*}
+        \frac{f(x)}{g(x)} &= \frac{45x}{4+95x} 		\\
+    \end{align*}
+
+    y el dominio viene dado por:
+    $$ Dom_{\frac{f}{g}}= Dom_f \cap Dom_g -\{x|g(x)=0\}$$
+    $$ Dom_{\frac{f}{g} } =  (\{0,-4/95,4,5,8,70,100\} \cap \{0,-4/95,1,2,3,5,8,10,100\}) -\{x|4+95x=0\rigtharrow -4/95 \}$$
+
+    $$Dom_{\frac{f}{g} }=\{0,5,8,100\} $$
+
+$ \frac{g(x)}{f(x)}  $
+
+    \begin{align*}
+        \frac{g(x)}{f(x)} &= \frac{4+95x}{45x}		\\
+        \frac{g(x)}{f(x)} &= \frac{4}{45x} +\frac{95}{45}
+    \end{align*}
+
+    y el dominio viene dado por:
+    $$ Dom_{\frac{g}{f}}= Dom_f \cap Dom_g -\{x|f(x)=0\}$$
+    $$ Dom_{\frac{g}{f} } =  (\{0,-4/95,4,5,8,70,100\} \cap \{0,-4/95,1,2,3,5,8,10,100\}) -\{x|45x=0\rigtharrow 0 \}$$
+
+    $$Dom_{\frac{f}{g} }=\{-4/95,5,8,100\} $$
+
+\subsubsection*{Evaluacion de funciones} \label{Evaluacion_de_funciones}
+
+Es una de las operaciones mas importantes, consiste en sustituir dentro de la
+expresion, la variable independiente por un elemento del dominio, esta operacion
+puede repetirse tantas veces como haga falta con todos los elementos del dominio
+para obtener el rango de la funcion.
+
+Para evaluar una funcion se escribe de la siguiente forma $ f(a) $, la funcion
+evaluada en le punto $a$, donde $a$ puede ser cualquier elemento o expresion
+del dominio de la funcion.
+
+\textbf{Para realizar esta operacion}, se debe sustituir la variable independiente
+en la expresion de la funcion por el termino deseado y luego simplificar de ser
+posible.
+
+    Ejemplos:
+
+    Sean:
+    $f(x)= 45x$,
+    $ g(x)=154 + 75x $  ,
+    $ h(x)=\frac{45x}{2} - x^2 $  ,
+    $ z(x) = \sqrt[3]{5x+9}  $  .
+
+    Evaluarlas en {0,5,a-2}:
+
+    $f(x)= 45x$
+
+    0: $ f(0)= 45(0)=0$
+
+    5: $ f(5)=45(5)=225 $
+
+    a-2: $ f(a-2)= 45(a-2)=45a-90 $
+
+
+    $ g(x)=154 + 75x $
+
+    0: $ g(0)=154+75(0)=154 $
+
+    5:  $ g(5)=154+75(5)=154+375=529 $
+
+    a-2: $ g(a-2)=154+75(a-2)=154+75a-150=4+75a $
+
+
+    $ h(x)=\frac{45x}{2} - x^2 $
+
+    0: $ h(0)=\frac{45(0)}{2} - 0^2 = 0$
+
+
+    5: $ h(5)=\frac{45(5)}{2} - 5^2 =\frac{225}{2}- 25=\frac{175}{2}  $
+
+
+    a-2: $ h(a-2)=\frac{45(a-2)}{2} - (a-2)^2= \frac{45a-90}{2} -(a^2-4a+4)=\frac{-2a^2+53a-98}{2}  $
+
+
+    $ z(x) = \sqrt[3]{5x+9}  $
+
+    0:    $ z(0) = \sqrt[3]{5(0)+9}= \sqrt[3]{9}  $
+
+    5:    $ z(5) = \sqrt[3]{5(5)+9}= \sqrt[3]{34}  $
+
+    a-2:    $ z(a-2) = \sqrt[3]{5(a-2)+9}   = \sqrt[3]{5a-10+9} = \sqrt[3]{5a-1}$
 
 \subsection{Función Lineal}
 \subsection{Función Cuadratica}

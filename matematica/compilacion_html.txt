@@ -1,0 +1,7 @@
+
+Agregar el preambulo de ecuaciones2.txt
+Cambiar colores a definidos por defecto en latex
+SkyBlue
+Thistle
+
+pandoc ecuaciones2.tex -s --katex -o ecuaciones.html
