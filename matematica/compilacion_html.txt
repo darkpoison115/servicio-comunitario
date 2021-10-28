@@ -4,4 +4,4 @@ Cambiar colores a definidos por defecto en latex
 SkyBlue
 Thistle
 
-pandoc ecuaciones2.tex -s --katex -o ecuaciones.html
+pandoc ecuaciones2.tex -s --katex -o ecuaciones.html --from latex+raw_tex --lua-filter=../tikz-to-png.lua
