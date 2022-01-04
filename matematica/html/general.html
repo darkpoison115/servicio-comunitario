@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>general</title>
+  <style>
+    html {
+      line-height: 1.5;
+      font-family: Georgia, serif;
+      font-size: 20px;
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 1em;
+      }
+    }
+    @media print {
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace;
+      font-size: 85%;
+      margin: 0;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+  </style>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.11.1/katex.min.js"></script>
+  <script>document.addEventListener("DOMContentLoaded", function () {
+   var mathElements = document.getElementsByClassName("math");
+   var macros = [];
+   for (var i = 0; i < mathElements.length; i++) {
+    var texText = mathElements[i].firstChild;
+    if (mathElements[i].tagName == "SPAN") {
+     katex.render(texText.data, mathElements[i], {
+      displayMode: mathElements[i].classList.contains('display'),
+      throwOnError: false,
+      macros: macros,
+      fleqn: false
+     });
+  }}});
+  </script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.11.1/katex.min.css" />
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<h1 id="general">General</h1>
+<h2 id="fracciones">Fracciones</h2>
+<p>una fracción, número fraccionario, o numero <strong>racional</strong> , es la expresión de una cantidad dividida entre otra cantidad; es decir que representa un cociente no efectuado de 2 números. Las fracciones, como se observan en la imagen , comunes se componen de: numerador, denominador y línea divisora entre ambos (barra horizontal u oblicua). En una fracción común a/b el denominador "b" expresa la cantidad de partes iguales que representan la unidad y <strong>no puede ser 0</strong> , y el numerador "a" indica cuántas de ellas se toman.</p>
+<p><img src="../images/fraccion.jpeg" title="fig:" alt="Fracción" /> </p>
+<p>El conjunto matemático que contiene a las fracciones de la forma a/b, donde a y b son números enteros y b <span class="math inline">\not =</span> 0 es el conjunto de los números racionales, denotado como <span class="math inline">\mathbb{Q}</span>.</p>
+<p>Toda fracción es una división y toda división es una fracción. Debido a eso una división se puede convertir en una fracción para ser simplificada.</p>
+<p>Las fracciones pueden ser representadas como <span class="math inline">num\div denom</span>, <span class="math inline">num\/denom</span> o <span class="math inline">\frac{num}{denom}</span> en una operación matemática.</p>
+<h3 id="operaciones-con-fracciones">Operaciones con fracciones</h3>
+<p>Dado que las fracciones, el conjunto <span class="math inline">\mathbb{Q}</span>, son una extensión de los números previamente estudiados (conjuntos <span class="math inline">\mathbb{N}</span> y <span class="math inline">\mathbb{Z}</span>), se pueden realizar las mismas operaciones, es decir, , ,, , ,  y .</p>
+<h3 class="unnumbered" id="simplificación">simplificación</h3>
+<p>Simplificar una fracción consiste en reducir tanto el numerador como el denominador en iguales proporciones hasta llevarlo a su mínima expresión. Para esto, se deben descomponer en su base y simplificar, eliminar, los números que sean iguales en numerador y denominador. Ejemplo: <span class="math display">\frac{21}{9} = \frac{factores(21)}{factores{9}} = \frac{7\times \colorbox{Thistle}{3} }{\colorbox{Thistle}{3}\times3} = \frac{7}{3}</span> <span class="math display">\frac{154}{22} = \frac{factores(154)}{factores{22}} = \frac{\colorbox{Thistle}{2}\times7\times\colorbox{Thistle}{11}}{\colorbox{Thistle}{2}\times\colorbox{Thistle}{11}} = \frac{7}{1}=7</span> <span class="math display">\frac{6}{8} = \frac{factores(6)}{factores{8}} = \frac{\colorbox{Thistle}{2}\times3}{\colorbox{Thistle}{2}\times2\times2} = \frac{3}{4}</span></p>
+<p>Los 0 a la izquierda se pueden eliminar dividiendo entre 10 tantas veces sea posible: <span class="math display">\frac{10}{200} = \frac{1\times\colorbox{Thistle}{10}}{2\times\colorbox{Thistle}{10}\times10} = \frac{1}{20}</span></p>
+<h3 class="unnumbered" id="suma">Suma y Resta</h3>
+<p>La suma y la resta entre fracciones puede dividirse en 2 posibilidades:</p>
+<ul>
+<li><p>Los denominadores son <strong>iguales</strong> En este caso, se deja el mismo denominador y se suman o restan, dependiendo del signo y la operación, los numeradores. Se emplean las mismas reglas con respecto a los signos. Ejemplos:</p>
+<p><strong>Suma de fracciones</strong> <span class="math display">\frac{7}{5} + \frac{19}{5} = \frac{7+19}{5} = \frac{26}{5}</span></p>
+<p><strong>Resta de fracciones</strong> <span class="math display">\frac{7}{5} - \frac{19}{5} = \frac{7-19}{5} = \frac{-12}{5}</span> <strong>Recordemos</strong> que cuando se restan números pueden haber resultados negativos.</p>
+<p><strong>Suma de fracciones (signos distintos)</strong> <span class="math display">\frac{10}{9} + \frac{-8}{9} = \frac{10 + (-8)}{9}  = \frac{2}{9}</span> <strong>Cabe resaltar</strong> que siempre hay que tener en cuenta los signos.</p>
+<p><strong>Suma algebraica, varias funciones</strong> <span class="math display">\frac{7}{8} + \frac{-5}{8} - \frac{-9}{8} + \frac{10}{8} =
+            \frac{7+(-5)-(-9)+10}{8} = \frac{21}{8}</span></p></li>
+<li><p>Los denominadores son <strong>diferentes</strong> Cuando esto pasa, hay que llevar las fracciones a un denominador común, para de esta forma aplicar lo que ya vimos. Esto se puede hacer de 2 formas, consiguiendo el <strong>mínimo común múltiplo (mcm)</strong> o haciendo una operación “cruzada" y luego multiplicamos el numerador por el mismo numero que multiplicamos el denominador de esa fracción. Ejemplos:</p>
+<p><strong>Suma de fracciones con distinto denominador</strong></p>
+<p><strong>mcm:</strong> <span class="math display">\begin{aligned}
+                &amp;\frac{5}{3} + \frac{10}{9}\\
+                &amp;buscamos\ el\ M.C.M:\\
+                &amp;M.C.M(3) = 3\  \&amp;\  M.C.M(9) = 3^2 \Rightarrow M.C.M(3;9) = 3^2\\
+                &amp;\frac{5\times3}{3\times3} + \frac{10\times1}{9\times1} = \frac{5\times3+10}{9} = \frac{25}{9}
+            \end{aligned}</span></p>
+<p><strong>cruzado:</strong> En este método se multiplican directamente los denominadores para crear el nuevo denominador y luego se multiplican los numeradores por los denominadores opuestos. <span class="math display">\begin{aligned}
+                &amp;\frac{5}{3} + \frac{10}{9}\\
+                &amp;numerador\ 1 = \frac{5}{3} \searrow \frac{10}{9} = 5\times9 = 45\\
+                &amp;numerador\ 2 = \frac{5}{3}  \nearrow \frac{10}{9} = 3\times10 = 30\\
+                &amp;denominador = \frac{5}{3} \rightarrow \frac{10}{9} = 3\times9 = 27\\
+                &amp;\frac{5\times9}{3\times9} + \frac{10\times3}{9\times3} = \frac{45+30}{27} = \frac{75}{27}
+            \end{aligned}</span></p>
+<p><strong>Nota:</strong> aunque las fracciones se vean diferentes, tienen el mismo valor, a estas se les conoce como <strong>fracciones equivalentes</strong> y se puede comprobar fácilmente al ver que <span class="math inline">25\times3=75</span> y <span class="math inline">3\times9=27</span>.</p></li>
+</ul>
+<h3 class="unnumbered" id="comparación">Comparación</h3>
+<p>Para comparar 2 fracciones se de deben tomar en cuenta tanto el numerador como el denominador. Primero se debe asegurar que el denominador sea el mismo y luego comparar los numeradores. Para esto se puede usar cualquiera de los métodos vistos en la suma (M.C.M o cruzado).</p>
+<p>La forma mas rápida de hacerlo es con el método de el <strong>cruzado</strong> de la suma, dado que solo hay que conseguir los numeradores, ya que estos métodos (también aplica con el M.C.M) aseguran un denominador común. Ejemplo: <span class="math display">\begin{aligned}
+            &amp;\frac{5}{3}\ ;\ \frac{10}{9}\\
+            &amp;numerador\ 1 = \frac{5}{3} \searrow \frac{10}{9} = 5\times9 = 45\\
+            &amp;numerador\ 2 = \frac{5}{3}  \nearrow \frac{10}{9} = 3\times10 = 30\\
+            &amp;\Rightarrow como\ 45&gt;30\ \frac{5}{3} &gt; \frac{10}{9}
+        \end{aligned}</span></p>
+<h3 class="unnumbered" id="multiplicación">Multiplicación</h3>
+<p>La multiplicación se hace de forma lineal, es decir, se multiplican los numeradores para obtener el numerador y los denominadores para obtener el denominador. Ejemplos:</p>
+<p><strong>Multiplicación</strong> <span class="math display">\frac{7}{5} \times \frac{6}{11} = \frac{7\times6}{5\times11} =\frac{42}{55}</span> <span class="math display">\frac{5}{3} \times \frac{10}{9} = \frac{5\times10}{3\times9} =\frac{50}{27}</span></p>
+<h3 class="unnumbered" id="división">División</h3>
+<p>La división se puede hacer de dos formas:</p>
+<p><strong>Invirtiendo el denominador</strong></p>
+<p>en este caso, se invierte la fracción del denominador (el numerador pasa a ser el denominador y el denominador al numerador) y se multiplica por esta. Ejemplos:</p>
+<p><span class="math display">\frac{7}{5}\div \frac{6}{11} = \frac{7}{5} \times \frac{11}{6} = \frac{7\times11}{5\times6} =\frac{77}{30}</span> <span class="math display">\frac{5}{3} \times \frac{10}{9} = \frac{5}{3} \times \frac{9}{10} = \frac{5\times9}{3 \times10} =\frac{45}{30}</span></p>
+<p><strong>Doble C</strong></p>
+<p>Se coloca el denominador debajo del numerador de forma que queden 4 números verticales, los extremos se multiplican para dar el numerador y los internos se multiplican y dan como resultado el denominador. Ejemplos:</p>
+<p><span class="math display">\frac{7}{5}\div \frac{6}{11} =
+    \frac{\displaystyle \frac{\colorbox{SkyBlue}{7}}{\colorbox{Thistle}{5}}}{\displaystyle \frac{\colorbox{Thistle}{6}}{\colorbox{SkyBlue}{11}}}
+    =\frac{\colorbox{SkyBlue}{$7\times11$}}{\colorbox{Thistle}{$5\times6$}} =\frac{77}{30}</span></p>
+<p><span class="math display">\frac{5}{3} \times \frac{10}{9}=
+    \frac{\displaystyle \frac{\colorbox{SkyBlue}{5}}{\colorbox{Thistle}{3}}}{\displaystyle \frac{\colorbox{Thistle}{10}}{\colorbox{SkyBlue}{9}}}
+    = \frac{\colorbox{SkyBlue}{$5\times9$}}{\colorbox{Thistle}{$3\times10$}} =\frac{45}{30}</span></p>
+<h3 class="unnumbered" id="potenciación">Potenciación</h3>
+<p>Una fracción puede tener potencia en su numerador, denominador, ambos o un exponente común para ambos. En el caso de que sea en el numerador o denominador, se resuelve como se acostumbra. Si la potenciación se aplica a ambos elementos, esta se puede dividir, es decir la potencia de una fracción es igual a la potencia del numerador entre la del denominador y con estos se procede de la misma forma que para los conjuntos previamente estudiados, y tienen las mismas propiedades. Ejemplos:</p>
+<p><strong>Potencia en el numerador</strong> <span class="math display">\frac{5^3}{9} = \frac{5\times5\times5}{9} =\frac{125}{9}</span></p>
+<p><strong>Potencia en el denominador</strong> <span class="math display">\frac{5}{3^4} = \frac{5}{3\times3\times3\times3} =\frac{5}{81}</span></p>
+<p><strong>Potencias distintas en numerador y denominador</strong> <span class="math display">\frac{5^3}{3^4} = \frac{5\times5\times5}{3\times3\times3\times3} = \frac{125}{81}</span></p>
+<p><strong>Potencia afectando a numerador y a denominador</strong> <span class="math display">\left(\frac{4}{3}\right)^2 =  \frac{4^2}{3^2} = \frac{16}{9}</span></p>
+<p><strong>Hay que resaltar</strong> que la operación opuesta puede realizarse también, es decir, si el numerador y el denominador tienen la misma potencia, se puede colocar una única potencia que afecte a toda la fracción.</p>
+<p><span class="math display">\frac{2^3}{5^3} = \left(\frac{2}{5}\right)^3</span> <span class="math display">\frac{2^{4\times2}}{5^{3\times2}} =  \left(\frac{2^4}{5^3}\right)^2</span></p>
+<h3 class="unnumbered" id="radicalización">Radicalización (Raíces)</h3>
+<p>Una fracción puede contener radicales en su numerador, denominador, ambos o una raíz en común para ambos, y se procede de la misma forma que con la potencia pero siendo este caso una raíz. Si el denominador contiene radicales, puede ser de gran ayuda <strong>racionalizar</strong> estos, especialmente si se van a realizar operaciones, tales como la adición o la comparación de una fracción con otra. Es también conveniente si la división tiene que realizarse explícitamente. Para racionalizar necesitamos elevar la raíz al mismo termino que esta (2 si es cuadrada, 3 si es cubica, etc), esto se consigue al multiplicar tanto el numerador como el denominador por la raíz que se quiera eliminar, tantas veces como sea necesario (como ya hay 1, seria 1 si es cuadrática, 2 si es cubica, etc). ejemplos:</p>
+<p><strong>Nota:</strong> una raíz puede ser expresada como una potencia fraccionaria, de esta forma se pueden facilitar cálculos. <span class="math inline">\displaystyle \sqrt{a} = a^{\frac{1}{2}},\  \sqrt[3]{a} = a^{\frac{1}{3}},\ \cdots,\ \sqrt[n]{a}=a^{\frac{1}{n}}</span></p>
+<p><strong>Raíz en el numerador</strong> <span class="math display">\frac{\sqrt{9}}{5} = \frac{3}{5}</span></p>
+<p><strong>Raíz en el denominador</strong> <span class="math display">\frac{5}{\sqrt{4}} = \frac{5}{2}</span></p>
+<p><strong>Raíz distintas en numerador y denominador</strong> <span class="math display">\frac{\sqrt[3]{27}}{\sqrt{4}}  = \frac{3}{2}</span></p>
+<p><strong>Raíz afectando a numerador y a denominador</strong> <span class="math display">\sqrt{\frac{4}{25}} =  \frac{\sqrt{4}}{\sqrt{25}} = \frac{2}{5}</span></p>
+<p><strong>Racionalización</strong></p>
+<p><span class="math display">\frac{3}{\sqrt{7}} =\frac{3}{\sqrt{7}} \frac{\sqrt{7}}{\sqrt{7}}
+    = \frac{3\times \sqrt{7}}{\sqrt{7}\times\sqrt{7}} = \frac{3\times \sqrt{7}}{7}</span></p>
+<p><span class="math display">\frac{3}{\sqrt[3]{7}} =\frac{3}{\sqrt[3]{7}} \left(\frac{\sqrt[3]{7}}{\sqrt[3]{7}}\right)^2
+    = \frac{3\times (\sqrt[3]{7})^2 }{\sqrt[3]{7}\times(\sqrt[3]{7})^2} = \frac{3\times (\sqrt[3]{7})^2}{7}</span></p>
+<h3 class="unnumbered" id="propiedades">Propiedades</h3>
+<p>Las propiedades de el conjunto <span class="math inline">\mathbb{Q}</span>, las mismas que en <span class="math inline">\mathbb{N}</span> y <span class="math inline">\mathbb{Z}</span>, siendo estas extrapoladas a fracciones.</p>
+<p><strong>Nota: Todo numero entero puede escribirse como fracción, la forma mas simple es colocarle un denominador de 1</strong>: <span class="math display">\begin{aligned}
+        10=\frac{10}{1} \hspace*{1cm}   4431 &amp;= \frac{4431}{1}\hspace*{1cm} -75=\frac{-75}{1} \\
+        \text{y mas general, con letras:  } A &amp;= \frac{A}{1}\ ;\ A\in \mathbb{Z}
+    \end{aligned}</span></p>
+<p>Sean <span class="math inline">\displaystyle \frac{A}{J},\ \frac{B}{K},\ \frac{C}{L}</span> fracciones cualquiera.</p>
+<ul>
+<li><p><strong>Propiedad Conmutativa</strong> Tanto para la suma como la multiplicación se cumple que:</p>
+<p><strong>Aditiva:</strong> <span class="math display">\frac{A}{J} +\frac{B}{K} = \frac{B}{K} +\frac{A}{J}</span></p>
+<p><span class="math display">\frac{3}{2} +\frac{1}{5} = \frac{17}{10} = \frac{1}{5} +\frac{3}{2}</span></p>
+<p><strong>Multiplicativa:</strong> <span class="math display">\frac{A}{J} \times\frac{B}{K} = \frac{B}{K} \times\frac{A}{J}</span></p>
+<p><span class="math display">\frac{3}{2} \times\frac{1}{5} = \frac{3}{10} = \frac{1}{5} \times\frac{3}{2}</span></p></li>
+<li><p><strong>Propiedad Asociativa</strong> Tanto para la suma como la multiplicación se cumple que:</p>
+<p><strong>Aditiva:</strong> <span class="math display">\frac{A}{J}+\left(\frac{B}{K}+\frac{C}{L}\right)=\left(\frac{A}{J}+\frac{B}{K}\right)+\frac{C}{L}</span></p>
+<p><span class="math display">\begin{aligned}
+            \frac{5}{3} +\left(\frac{1}{8} +\frac{7}{6}\right) &amp;=\left( \frac{5}{3} +\frac{1}{8}\right) +\frac{7}{6}\\
+            \frac{5}{3} +\frac{1\times6+7\times8}{8\times6} &amp;= \frac{5\times8+1\times3}{3\times8}+\frac{7}{6}\\
+            \frac{5}{3} + \frac{62}{48} &amp;= \frac{43}{24} +\frac{7}{6} \\
+            \frac{5\times48+62\times3}{48\times3} &amp;= \frac{43\times6+7\times24}{24\times6} \\
+            \frac{426}{144} &amp;= \frac{426}{144}
+        \end{aligned}</span></p>
+<p><strong>Multiplicativa:</strong> <span class="math display">\frac{A}{J}\times\left(\frac{B}{K}\times\frac{C}{L}\right)=\left(\frac{A}{J}\times\frac{B}{K}\right)\times\frac{C}{L}</span></p>
+<p><span class="math display">\begin{aligned}
+            \frac{5}{3}\times \left(\frac{1}{8}\times \frac{7}{6}\right)  &amp;=\left( \frac{5}{3}\times \frac{1}{8}\right)\times \frac{7}{6}\\
+            \frac{5}{3} \times \frac{1\times7}{8\times6} &amp;= \frac{1\times5}{8\times3} \times \frac{7}{6} \\
+            \frac{5}{3} \times \frac{7}{48} &amp;= \frac{5}{24} \times  \frac{7}{6} \\
+            \frac{5\times7}{3\times48} &amp;= \frac{5\times 7}{24\times6} \\
+            \frac{35}{144} &amp;= \frac{35}{144}
+        \end{aligned}</span></p></li>
+<li><p><strong>Propiedad distributiva</strong> se cumple que:</p>
+<p><span class="math display">\frac{A}{J}\times\left(\frac{B}{K}+\frac{C}{L}\right)=\left(\frac{A}{J}\times\frac{B}{K}\right)+\left(\frac{A}{J}\times\frac{C}{L}\right)</span> <span class="math display">\begin{aligned}
+            \frac{1}{7}\times\left(\frac{2}{3}+\frac{4}{5}\right)&amp;=\left(\frac{1}{7}\times\frac{2}{3}\right)+\left(\frac{1}{7}\times\frac{4}{5}\right)\\
+            \frac{1}{7} \times \frac{2\times5+4\times3}{3\times5} &amp;= \left(\frac{1\times2}{7\times3} \right)+\left(\frac{1\times4}{7\times5} \right) \\
+            \frac{1}{7} \times  \frac{22}{15} &amp;= \frac{2}{21} + \frac{4}{35} \\
+            \frac{1\times22}{7\times15} &amp;= \frac{2\times35+4\times21}{21\times35} \\
+            \frac{22}{105} &amp;= \frac{154}{735} \\
+        \end{aligned}</span> aunque los resultados parezcan diferentes, se puede observar que son <strong>fracciones equivalentes</strong> ya que <span class="math display">22\times7=154</span> y <span class="math display">105\times7=735</span></p></li>
+<li><p><strong>Elemento neutro de la suma</strong> Este sigue siento el numero 0, ya que al sumarlo queda igual.</p>
+<p><span class="math display">\frac{A}{J} + 0 = \frac{A}{J}</span></p>
+<p><span class="math display">\frac{57}{3} + 0 = \frac{57}{3}</span></p></li>
+<li><p><strong>Elemento neutro de la multiplicación</strong> Este es el 1 ya que cualquier numero multiplicado por 1 sigue siendo el mismo</p>
+<p><span class="math display">\frac{A}{J} \times 1 = \frac{A}{J}</span></p>
+<p><span class="math display">\frac{28}{9} \times 1 = \frac{28}{9}</span></p></li>
+</ul>
+<h3 class="unnumbered" id="fracciones-equivalentes">Fracciones Equivalentes</h3>
+<p>Como se ha observado, una fracción representa una cantidad especifica. Y por ende, las fracciones equivalentes son aquellas que expresan el mismo número, o cantidad, aunque el numerador y denominador de estas sean distintas. Esto es posible ya que, si se multiplica, o divide, el numerador y denominador de una fracción por el mismo numero, se obtiene una nueva forma de describir la misma cantidad original. <strong>(esto es ya que al multiplicar el numerador y el denominador por una misma cantidad, es equivalente a multiplicarlo por 1)</strong> <span class="math inline">5\div5 = 1,\ 485\div485 = 1, -4684\div-4684 = 1 \rightarrow n\div n=1</span> Ejemplos:</p>
+<p><span class="math display">\frac{3}{5} =\frac{3\times4}{5\times4} = \frac{12}{20}</span> <span class="math display">\frac{-95}{3} = \frac{-95\times2}{3\times2} =\frac{190}{6}</span> <span class="math display">\frac{451}{9} = \frac{451\times3}{9\times3} = \frac{1353}{27}</span> <span class="math display">\vdots</span> <span class="math display">\frac{A}{B} = \frac{A\times N}{B\times N}\ ;\ con \{A,B,N \} \in \mathbb{Z}</span></p>
+<p><strong>Por lo tanto,</strong> para conseguir una fracción equivalente solo hace falta multiplicar el numerador y el denominador, de la función dada, por un numero cualquiera.</p>
+<h3 class="unnumbered" id="fracción-generatriz">Fracción Generatriz</h3>
+<p>La fracción generatriz es aquella que da como resultado un número decimal, ya sea exacto o periódico, mediante una fracción irreducible, es decir, donde el numerador y el denominador no tienen divisores en común, de manera que la fracción no se puede simplificar en números más pequeños. Para encontrar la fracción generatriz de una expresión en particular se debe distinguir en 3 casos:</p>
+<ul>
+<li><p><strong>el numero es decimal exacto.</strong> Tomamos el número sin la coma decimal y lo dividimos entre diez elevado al número de decimales, y luego simplificamos la fracción. Ejemplos: <span class="math display">0,46 = \frac{46}{10^2}=\frac{46}{100}=\frac{ \colorbox{Thistle}{2}\times 23}{50\times \colorbox{Thistle}{2}}  \frac{23}{50}</span> <span class="math display">1,125 = \frac{1125}{10^3}=\frac{1125}{1000}=\frac{3^2\times\colorbox{Thistle}{$5^3$}}{2^3\times\colorbox{Thistle}{$5^3$}}=\frac{9}{8}</span> <span class="math display">2,4=\frac{24}{10}= \frac{3\times2\times2\times \colorbox{Thistle}{2}}{5\times \colorbox{Thistle}{2}} = \frac{12}{5}</span></p></li>
+<li><p><strong>El numero es periódico puro.</strong> Tomamos el número sin la coma decimal, usando una única vez el periodo, y le restamos la parte entera. Luego, al resultado lo dividimos entre un número que tenga tantos nueves como cifras tiene el periodo, y finalmente simplificamos hasta hallar la fracción irreductible. <span class="math display">1,\widehat{5} =\frac{15-1}{9} =\frac{14}{9}</span> <span class="math display">4,\widehat{789}=\frac{4789-4}{999} =\frac{4785}{999}=\frac{1595\times \colorbox{Thistle}{3}}{333\times \colorbox{Thistle}{3}} = \frac{1595}{333}</span> <span class="math display">11,\widehat{45}=\frac{1145-11}{99}=\frac{1134}{99}=\frac{2\times \colorbox{Thistle}{$3^4$}\times7}{ \colorbox{Thistle}{$3^2$}\times 11} =\frac{2\times3^2\times7}{11} =\frac{126}{11}</span></p></li>
+<li><p><strong>El numero es periódico mixto.</strong> Tomamos el número, sin la coma decimal y repitiendo el periodo solo una vez. A este le restamos el numero formado por la parte entera y la no periódica. Dividimos el resultado entre tantos 9 como el periodo y tantos 0 como la parte decimal. <span class="math display">1,2\widehat{31} = \frac{1231-12}{990}= \frac{1219}{990}</span> <span class="math display">31,42\widehat{5}=\frac{31425-3142}{900} =\frac{28283}{900}</span> <span class="math display">0.4\widehat{243}=\frac{4243-4}{9990}=\frac{4239}{9990} =\frac{157\times \colorbox{Thistle}{$3^3$}}{2\times5\times37\times \colorbox{Thistle}{$3^3$}}= \frac{157}{2\times5\times37}= \frac{157}{370}</span></p></li>
+</ul>
+<p><strong>Cabe resaltar que:</strong> de manera más general, se puede extender el concepto de fracción a un cociente cualquiera de expresiones matemáticas (no necesariamente números), dando origen a funciones, ecuaciones y, permitiendo de esta forma, modelar todo tipo de fenómenos físicos.</p>
+<h2 id="notación-científica">Notación Científica</h2>
+<p>La notación científica es una forma de escribir números muy grandes o muy pequeños de forma mas sencilla y eficiente. Para esto, se utilizan las propiedades de la potenciación, y que si se multiplica por una potencia de 10 se mueve la coma decimal, si la potencia de 10 es <span class="math inline">&gt;0</span> se mueve hacia la derecha, y si es <span class="math inline">&lt;0</span>, se mueve hacia la izquierda.</p>
+<p>La idea de la notación científica es escribir el numero resultante de forma <strong>Normalizada</strong>, es decir con un numero distinto de 0 como unidad, luego la coma decimal, el resto de números en el mismo orden que se encontraban (si a partir de un punto solo quedan 0 a la derecha no se colocan), y luego “<span class="math inline">\times 10^{exp}</span>" donde “exp" seria el numero de veces que se corrió la coma.</p>
+<h3 class="unnumbered" id="de-numero-a-notación-científica">De numero a notación científica</h3>
+<p>se quiere llevar desde un numero sin potencia hacia la forma <span class="math inline">unidad, decimales \times10^{exp}</span>. Para esto se debe:</p>
+<ol>
+<li><p>Conseguir el dígito mas significativo ya que este sera la nueva unidad, único dígito de la parte entera, este es el dígito mas a la izquierda que sea distinto de 0. Ejemplos: <span class="math display">\begin{aligned}
+                235,39\ MSD&amp;= 2\\
+                0,12\ MSD&amp;=1
+                \\0,00000924\ MSD&amp;=9
+                \\ -4500000\ MSD &amp;=4\\
+                1507800,2\ MSD &amp;=1
+            \end{aligned}</span></p></li>
+<li><p>Conseguir el signo, este es el mismo que el del numero.</p></li>
+<li><p>Conseguir la nueva parte decimal. Esta esta conformada por todos los dígitos a la derecha del MSD, este se consiguió en el paso 1. Cabe resaltar que si estos son todos 0, o a partir de cierto punto todos los números hacia la derecha son 0, se omitirán. Ejemplos:</p>
+<p><span class="math display">\begin{aligned}
+                235,39\ decimal= &amp;3539\\ 0,12\ decimal=&amp;2\\
+                  0,00000924\ decimal=&amp;24\\ -4500000\ decimal=&amp;5\\1507800,2\ decimal=&amp;5078002
+            \end{aligned}</span></p></li>
+<li><p>Calcular el exponente. Esta compuesto en 2 partes, el signo y el valor.</p>
+<ul>
+<li><p>El signo sera:</p>
+<ul>
+<li><p>+ si el MSD esta a la izquierda de la coma “,"</p></li>
+<li><p>- si el MSD esta a la derecha de la coma “,"</p></li>
+</ul></li>
+<li><p>El valor sera: la cantidad de espacios, números, que se tiene que correr el MSD hasta llegar a ser el único dígito a la izquierda de la coma “,"</p></li>
+</ul>
+<p>Ejemplos: <span class="math display">\begin{aligned}
+                2 \colorbox{Thistle}{35},39\ exp=&amp;+2\\  \colorbox{Thistle}{0},12\ exp=&amp;-1\\
+                 \colorbox{Thistle}{0,000\ 00}924\ exp=&amp;-6\\ -4 \colorbox{Thistle}{500\ 000}\ exp=&amp;+6\\1 \colorbox{Thistle}{507800},2\ exp=&amp;+6
+            \end{aligned}</span></p></li>
+</ol>
+<p>Finalmente: <span class="math display">235,39=2,3539 \times10^{2}</span> <span class="math display">0,12 = 1,2 \times10^{-1}</span> <span class="math display">0,000\ 009\ 24 = 9,24 \times10^{-6}</span> <span class="math display">-4\ 500\ 000 = -4,5 \times10^{6}</span> <span class="math display">1\ 507\ 800,2 = 1,507\ 800\ 2 \times10^{6}</span></p>
+<h3 class="unnumbered" id="de-notación-científica-a-numero">de notación científica a numero</h3>
+<p>se quiere llevar desde la forma <span class="math inline">unidad, decimales \times10^{exp}</span> hacia un numero sin potencia. Para esto se debe correr la coma tantas veces lo diga el exponente y de acuerdo al signo, si es positivo( +, <span class="math inline">exp&gt;0</span>) hacia la derecha, si es negativo (-, <span class="math inline">exp&lt;0</span>) hacia la izquierda. Cuando no hay mas elementos a la derecha o izquierda(respectivamente del signo del exponente) después de la coma se completa con 0 (ceros).</p>
+<p><strong>nota:</strong> para ayudar a recordar hacia donde se mueve la coma, es útil usar el menor o mayor como la punta de una flecha, así se tiene que: <span class="math inline">-5&lt;0</span> entonces hacia la izquierda y <span class="math inline">5&gt;0</span> entonces hacia la derecha.</p>
+<p><span class="math display">2,3539 \times10^{2}= 2,\colorbox{Thistle}{35}39 = 235,39</span> <span class="math display">1,2 \times10^{-1} = 0\colorbox{Thistle}{1},2 = 0,12</span> <span class="math display">9,24 \times10^{-6}=\text{Completamos con 0 a la izquierda: } 0\colorbox{Thistle}{000\ 009},24 =0,000\ 009\ 24</span> <span class="math display">-4,5 \times10^{6}=\text{Completamos con 0 a la derecha: }-4,\colorbox{Thistle}{500\ 000}=-4\ 500\ 000</span> <span class="math display">1,507\ 800\ 2 \times10^{6}= 1, \colorbox{Thistle}{507\ 800}\ 2= 1\ 507\ 800,2</span></p>
+<p><strong>Dato curioso:</strong> se usan potencias de 10 ya que esta es la base del sistema decimal, es decir, tenemos 10 posibles opciones para la unidad (<span class="math inline">\{0,1,2,3,4,5,6,7,8,9\}</span>, en otros sistemas se utilizan potencias de la base para desplazar la coma, en binario potencias de 2, hexadecimal potencias de 16, etc.</p>
+<h2 id="teorema-de-pitágoras">Teorema de Pitágoras</h2>
+<p>En matemáticas, el teorema de Pitágoras es una relación fundamental en geometría euclidiana entre los tres lados de un triángulo <strong>rectángulo</strong>. Este teorema se puede escribir como una ecuación que relaciona las longitudes de los lados a, b y c, (catetos e hipotenusa) y a menudo se le llamada ecuación pitagórica y estipula que:</p>
+<p>“<em>En todo triangulo rectángulo, el cuadrado de la hipotenusa es igual a la suma de los cuadrados de los catetos</em>".</p>
+<p>Sean <span class="math inline">a,\ b</span> los catetos y <span class="math inline">c</span> la hipotenusa, como se observa en :</p>
+<p><span class="math display">c^2 = a^2+b^2</span> y despejando para hipotenusa y cada cateto: <span class="math display">c= \sqrt{a^2+b^2}</span> <span class="math display">a=\sqrt{c^2-b^2}</span> <span class="math display">b= \sqrt{c^2-a^2}</span></p>
+<p><img src="../images/triangulo.png" title="fig:" alt="Triangulo rectángulo" /> </p>
+<p><strong>Recordemos:</strong> que la hipotenusa de todo triangulo es el lado mas grande y siempre esta opuesta al ángulo de 90°</p>
+<h2 id="potenciación-1">Potenciación</h2>
+<p>La potenciación es una operación matemática entre 2 términos, <strong>base</strong> y <strong>exponente</strong> y se escribe de la forma: <span class="math inline">base^{exp}</span>, la potenciación se puede aplicar a cualquier conjunto de números (<span class="math inline">\mathbb{N}, \mathbb{Z},
+    \mathbb{Q}, \mathbb{R}, \mathbb{C}</span>) y consiste en:</p>
+<p><strong>Multiplicar tantas veces la base como lo indique el exponente</strong></p>
+<p>Cuando el exponente es 2 se le suele que esta elevado a <strong>cuadrado</strong> y al exponente 3 se le dice elevado al <strong>cubo</strong> y ante exponentes mayores se suele leer a la cuarta, quinta, etc potencia. O el numero esta elevado a cuatro, cinco, etc.</p>
+<p><strong>Nota:</strong> Cuando la base es un numero negativo, se encierra este entre paréntesis para evitar confusión, ya que <strong>el signo si afecta y se multiplica</strong>.</p>
+<p><strong>Es importante:</strong> saber que todo numero elevado a 0 tiene como resultado 1. ejemplos: <span class="math inline">5^0=1,\ 5441^0=1,\ (-443148)^0=1,\ n^0 = 1</span>, con n siendo distinto de 0. si la base y el exponente son ambos 0 la operación no esta definida, es decir <span class="math inline">0^0</span> es indeterminado, no existe. Ejemplos:</p>
+<p><span class="math display">\begin{aligned}
+        15^2 =&amp; 15\times15 = 225\\
+        6^4 =&amp; 6\times6\times6\times6 = 1296\\
+        (-8)^3 =&amp; -8\times-8\times-8 = -512\\
+        (-24)^2 =&amp; -24\times-24= 576\\
+     \end{aligned}</span></p>
+<p>De los ejemplos se observa que:</p>
+<ul>
+<li><p>Los resultados de la potenciación crecen muy rápido, mientras mayor sea el exponente, mayor sera el valor absoluto del numero resultante siempre que la base sea distinta de 1 o 0.</p></li>
+<li><p>todo numero elevado a 1 es el mismo numero.</p></li>
+<li><p>Si la base es 1 el resultado siempre sera 1.</p></li>
+<li><p><strong>Todo numero elevado a una potencia par da resultado positivo</strong></p></li>
+</ul>
+<p><strong>para las fracciones</strong>, se utiliza una propiedad de la potenciación, y se elevan tanto el numerador como el denominador al exponente común. Ejemplos:</p>
+<p><span class="math display">\begin{aligned}
+        \left(\frac{10}{8}\right)^3=&amp; \frac{10^3}{8^3} = \frac{10\times10\times10}{8\times8\times8} = \frac{1000}{512}\\
+        \left(\frac{5}{3}\right)^{2} =&amp; \frac{5^2}{3^2}= \frac{5\times5}{3\times3} = \frac{25}{9} \\
+        \left(\frac{-8}{7}\right)^{4} =&amp; \frac{(-8)^4}{7^4}= \frac{-8\times-8\times-8\times-8}{7\times7\times7\times7} = \frac{4096}{2401} \\
+        \left(\frac{a}{b}\right)^{n} =&amp; \frac{a^n}{b^n} \frac{a\times a\times \cdots\times a}{b\times b\times \cdots\times a}
+     \end{aligned}</span></p>
+<h3 class="unnumbered" id="propiedades-de-la-potenciación">Propiedades de la potenciación</h3>
+<h3 class="unnumbered" id="potencia-par">Potencia Par</h3>
+<p>Como se menciono anteriormente, <strong>todo numero elevado a una potencia par da como resultado un numero positivo</strong>, además, es bueno recordar que un numero par tiene la forma <span class="math inline">2\times N</span>, con N <span class="math inline">\in \mathbb{Z}</span> o dicho de otra forma, es divisible entre 2.</p>
+<p><span class="math display">\begin{aligned}
+            (-8)^{4} =&amp; -8\times-8\times-8\times-8 =&amp; 4096\\
+            9^3=&amp; 9\times9\times9 =&amp; 729\\
+            (-864)^2  =&amp; -864\times-864 = -746496\\
+            (-1)^88 =&amp; -1\times-1\times-1\times \cdots \times -1 = 1
+        \end{aligned}</span></p>
+<h3 class="unnumbered" id="potencia-impar">Potencia Impar</h3>
+<p>En este caso, todo numero elevado a potencia impar tendrá el mismo signo que la base. De nuevo, recordemos que un numero impar tiene la forma <span class="math inline">(2\times N)+1</span>, es decir, no es divisible entre 2.</p>
+<p><span class="math display">\begin{aligned}
+            (-3)^3 =&amp; -3\times-3\times-3 = -27\\
+            (-745)^1 =&amp; -745\\
+            (-2)^{7} =&amp; -2\times-2\times-2\times \cdots \times -2 = -128\\
+            (-1)^{97} =&amp; -1\times -1\times-1\times\cdots\times -1 = -1\\
+        \end{aligned}</span></p>
+<h3 class="unnumbered" id="exponente-negativo">Exponente Negativo</h3>
+<p>Un exponente negativo en una potencia implica que la base es una fracción con numerador 1 y denominador base, como el numerador es 1 el exponente solo afectara en el denominador y sera un numero positivo, es decir: <span class="math display">A^{-n}= \frac{1}{A^n}</span> Ejemplos:</p>
+<p><span class="math display">\begin{aligned}
+        7^{-1} &amp;= \frac{1}{7} \\
+        5^{-4}&amp; = \frac{1}{5^4} = \frac{1}{625}         \\
+        (-4)^{-3} &amp;= \frac{1}{(-4)^3} = \frac{1}{64} \\
+        98^{-2} &amp;= \frac{1}{98}
+        \left(\frac{3}{4} \right)^{-2} = \frac{1}{\left(\frac{3}{4} \right)^{2}} =\frac{4^2}{3^2} = \frac{16}{9}
+    \end{aligned}</span></p>
+<h3 class="unnumbered" id="multiplicación-de-potencias-de-igual-base">Multiplicación de potencias de igual base</h3>
+<p>Cuando se multiplican 2 o mas potencias de igual base, se deja la misma base y se <strong>suman</strong> los exponentes. Ejemplos:</p>
+<p><span class="math display">\begin{aligned}
+        2^{10}\times2^5 =&amp; 2^{10+5} = 2^{15} = 32768\\
+        5^2\times5^{3} =&amp; 5^{2+3} = 5^{5} =3125\\
+        9 \times 9^2 =&amp; 9^{1+2} = 9^3 = 729 \\
+        &amp;\vdots\\
+        A^m\times A^n &amp;= A^{m+n}
+    \end{aligned}</span></p>
+<h3 class="unnumbered" id="división-de-potencia-de-igual-base">División de potencia de igual base</h3>
+<p>Cuando se dividen 2 o mas potencias de igual base, se deja la misma base y se <strong>restan</strong> los exponentes. Ejemplos:</p>
+<p><span class="math display">\begin{aligned}
+        2^{10}\div2^5 =&amp; 2^{10-5} = 2^5 = 32\\
+        5^2\div5^{2} =&amp; 5^{2-2} = 5^{0} =1\\
+        9^4 \div 9^2 =&amp; 9^{4-2} = 9^2 = 81 \\
+        &amp;\vdots\\
+        A^m\div A^n &amp;= A^{m-n}
+    \end{aligned}</span></p>
+<h3 class="unnumbered" id="potencia-de-un-producto">Potencia de un producto</h3>
+<p>La potencia de un producto es igual al producto de los operandos elevados al exponente original, esto es <strong>La potencia puede repartirse a los multiplicandos</strong>, <span class="math inline">(A\times B)^{n} = A^n \times B^n</span>.</p>
+<p>Se hace especial énfasis en que es en <strong>productos</strong>, esto <strong>no aplica ni en suma ni en restas</strong>, en esos casos se usan <strong>productos notables</strong>.</p>
+<p>Ejemplos:</p>
+<p><span class="math display">\begin{aligned}
+        (3\times5)^2 =&amp;3^2\times5^2= 9\times25=225      \\
+        (10\times(-3))^3 =&amp; 10^3 \times (-3)^3 = 1000\times(-27) = -27000\\
+        (5\times4)^4 =&amp;5^4\times4^4 = 625\times256= 160000
+    \end{aligned}</span></p>
+<h3 class="unnumbered" id="potencia-de-un-cociente">potencia de un cociente</h3>
+<p>La potencia de un cociente es igual al cociente de los operandos elevados al exponente original, es decir, <strong>La potencia puede repartirse al numerador y al denominador</strong>. De nuevo se recuerda que <strong>LA POTENCIA NO SE PUEDE REPARTIR EN SUMA O RESTA</strong>, de presentarse una operación de ese estilo se aplica un producto notable (véase References<span>producto-notable</span>).</p>
+<p><span class="math display">\left(\frac{A}{B}\right)^{n} = \frac{A^n}{B^n}</span></p>
+<p><span class="math display">\begin{aligned}
+       \left(\frac{2}{3}\right)^{3} =&amp; \frac{2^3}{3^3}= \frac{8}{27}    \\
+        \left(\frac{7}{5}\right)^{2} =&amp; \frac{7^2}{5^2} =\frac{49}{25} \\
+        \left(\frac{8}{9}\right)^{4} =&amp;\frac{8^4}{9^4} = \frac{4096}{6561}\\
+        \left(\frac{-1}{2}\right)^{10} =&amp; \frac{(-1)^10}{2^10} = \frac{1}{1024}
+    \end{aligned}</span></p>
+<h3 class="unnumbered" id="potencia-de-una-potencia">Potencia de una potencia</h3>
+<p>La potencia de una potencia es igual a una nueva potencia, esta tiene como base la original y como exponente el producto de los dos exponentes de la original. De esta forma: <span class="math inline">(B^{exp1})^{exp2} = B^{exp1\times exp2}</span> donde <span class="math inline">B</span> es la base y <span class="math inline">exp1</span>, <span class="math inline">exp2</span> los exponentes.</p>
+<p><span class="math display">\begin{aligned}
+        \left(5^2\right)^{3} =&amp; 5^{2\times3}= 5^6 =15625    \\
+        \left(7^2\right)^{2} =&amp; 7^{2\times2}= 7^4  =2401 \\
+        \left(2^3\right)^{4} =&amp; 2^{3\times4}=2^12  = 4096\\
+        \left(\left(\frac{-1}{2}\right)^{5}\right)^2 =&amp;\left(\frac{-1}{2}\right)^{2\times5}= \left(\frac{-1}{2}\right)^{10}=\frac{(-1)^{10}}{2^{10}} = \frac{1}{1024}
+    \end{aligned}</span></p>
+<h3 class="unnumbered" id="exponente-racional">Exponente Racional</h3>
+<p>Un exponente racional implica que el numero que es el exponente pertenece al conjunto <span class="math inline">\mathbb{Q}</span>, es una fracción. De este tipo de expresiones es que se crearon las raíces, ya que son un caso particular del mismo (cuando el numerador es 1), esto significa que: <span class="math inline">A^\frac{1}{den} = \sqrt[den]{A}</span></p>
+<p>Por otro lado, el numerador actúa como un exponente normal, siendo la expresión general:</p>
+<p><span class="math inline">A^{\frac{num}{den} } = \sqrt[den]{A^{num}}</span></p>
+<p>Ejemplos:</p>
+<p><span class="math display">\begin{aligned}
+        10^{\frac{1}{4}} &amp;= \sqrt[4]{10}        \\
+        5^{\frac{2}{3} } &amp;= \sqrt[3]{5^2} = \sqrt[3]{25} \\
+        44^{\frac{-2}{5} }&amp;= \frac{1}{44^{\frac{2}{5}}} = \frac{1}{ \sqrt[5]{44^2} }= \frac{1}{ \sqrt[5]{1936} } \\
+        (-3)^{\frac{4}{5}} &amp;= \sqrt[5]{(-3)^4} = \sqrt[5]{81}
+    \end{aligned}</span></p>
+<h3 class="unnumbered" id="potencia-indeterminada">Potencia Indeterminada</h3>
+<p>La potencia <span class="math inline">0^0</span> es una potencia indeterminada, es decir no existe, para referirse a este tipo de resultados se dice que <strong>presenta una forma indeterminada <span class="math inline">0^0</span></strong>.</p>
+<p><strong>Como dato curioso:</strong> Existen otras formas indeterminadas por ejemplo <span class="math inline">\frac{0}{0}</span>, <span class="math inline">\frac{\infty}{\infty}</span> los cuales se estudian en cursos universitarios y superiores con <strong>limites</strong>.</p>
+<p><strong>Cabe resaltar:</strong> que es posible encontrarse mas de una propiedad en la misma potencia, y para resolverla basta con aplicar las propiedades que hagan falta, paso a paso.</p>
+</body>
+</html>

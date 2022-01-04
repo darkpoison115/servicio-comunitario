@@ -1,4 +1,50 @@
+\documentclass[12pt]{article}
+
+% allows for temporary adjustment of side margins
+\usepackage{chngpage}
+
+\usepackage{tocbibind}
+\usepackage{amsfonts}
+
+\usepackage[a4paper]{geometry}
+\geometry{top=2.54cm, bottom=2.54cm, left=2.54cm, right=2.54cm}
+
+\usepackage[spanish,es-noshorthands]{babel}
+\usepackage[utf8]{inputenc}
+
+\usepackage[T1]{fontenc}
+\usepackage{float}
+\usepackage{graphicx} % graficos
+\graphicspath{ {../images} }
+
+\usepackage{setspace}%interlineado agrega:
+% \doublespacing \onehalfspace \singlespace \spacing{x}
+\spacing{1.5}
+
+\usepackage{color}
+
+\usepackage{amsmath}
+\usepackage{array}
+
+\usepackage{csquotes}
+\usepackage[bookmarks = true, colorlinks=true, linkcolor = black, citecolor = black, menucolor = black, urlcolor = black]{hyperref}
+
+\usepackage{tikz}
+%****************************************************
+%     secciones con formato especifico
+
+\newcommand{\comillas}[1]{``#1"}
+\newcommand\ddfrac[2]{\frac{\displaystyle #1}{\displaystyle #2}}
+
+\newcommand{\p}{\textcolor{Blue}{+ + + +}}
+\newcommand{\n}{\textcolor{Red}{- - - - -}}
+\newcommand{\R}[1]{\colorbox{Red}{#1}}
+
+\begin{document}
+
 \section{General}
+
+
 
 \subsection{Fracciones}
 
@@ -15,7 +61,7 @@ cuántas de ellas se toman.
     \begin{figure}[htb]
 		\centering
         \caption{Fracción}
-		\includegraphics[ width= 5cm ]{fraccion.jpeg}
+		\includegraphics{../images/fraccion.jpeg}
 		\label{Fracción}
 	\end{figure}
 
@@ -47,12 +93,12 @@ $\frac{num}{denom}$  en una operación matemática.
     denominador en iguales proporciones hasta llevarlo a su mínima expresión.
     Para esto, se deben descomponer en su base y simplificar, eliminar, los números
     que sean iguales en numerador y denominador. Ejemplo:
-    $$ \frac{21}{9} = \frac{factores(21)}{factores{9}} = \frac{7\times \colorbox{RojoClaro}{3} }{\colorbox{RojoClaro}{3}\times3} = \frac{7}{3}  $$
-    $$ \frac{154}{22} = \frac{factores(154)}{factores{22}} = \frac{\colorbox{RojoClaro}{2}\times7\times\colorbox{RojoClaro}{11}}{\colorbox{RojoClaro}{2}\times\colorbox{RojoClaro}{11}} = \frac{7}{1}=7  $$
-    $$ \frac{6}{8} = \frac{factores(6)}{factores{8}} = \frac{\colorbox{RojoClaro}{2}\times3}{\colorbox{RojoClaro}{2}\times2\times2} = \frac{3}{4}  $$
+    $$ \frac{21}{9} = \frac{factores(21)}{factores{9}} = \frac{7\times \colorbox{Thistle}{3} }{\colorbox{Thistle}{3}\times3} = \frac{7}{3}  $$
+    $$ \frac{154}{22} = \frac{factores(154)}{factores{22}} = \frac{\colorbox{Thistle}{2}\times7\times\colorbox{Thistle}{11}}{\colorbox{Thistle}{2}\times\colorbox{Thistle}{11}} = \frac{7}{1}=7  $$
+    $$ \frac{6}{8} = \frac{factores(6)}{factores{8}} = \frac{\colorbox{Thistle}{2}\times3}{\colorbox{Thistle}{2}\times2\times2} = \frac{3}{4}  $$
 
     Los 0 a la izquierda se pueden eliminar dividiendo entre 10 tantas veces sea posible:
-    $$ \frac{10}{200} = \frac{1\times\colorbox{RojoClaro}{10}}{2\times\colorbox{RojoClaro}{10}\times10} = \frac{1}{20}  $$
+    $$ \frac{10}{200} = \frac{1\times\colorbox{Thistle}{10}}{2\times\colorbox{Thistle}{10}\times10} = \frac{1}{20}  $$
 
 
 \subsubsection*{Suma y Resta}\label{suma}
@@ -163,12 +209,12 @@ $\frac{num}{denom}$  en una operación matemática.
     se multiplican y dan como resultado el denominador. Ejemplos:
 
     $$\frac{7}{5}\div \frac{6}{11} =
-    \ddfrac{\frac{\colorbox{AzulClaro}{7}}{\colorbox{RojoClaro}{5}}}{\frac{\colorbox{RojoClaro}{6}}{\colorbox{AzulClaro}{11}}}
-    =\frac{\colorbox{AzulClaro}{$7\times11$}}{\colorbox{RojoClaro}{$5\times6$}} =\frac{77}{30} $$
+    \ddfrac{\frac{\colorbox{SkyBlue}{7}}{\colorbox{Thistle}{5}}}{\frac{\colorbox{Thistle}{6}}{\colorbox{SkyBlue}{11}}}
+    =\frac{\colorbox{SkyBlue}{$7\times11$}}{\colorbox{Thistle}{$5\times6$}} =\frac{77}{30} $$
 
     $$\frac{5}{3} \times \frac{10}{9}=
-    \ddfrac{\frac{\colorbox{AzulClaro}{5}}{\colorbox{RojoClaro}{3}}}{\frac{\colorbox{RojoClaro}{10}}{\colorbox{AzulClaro}{9}}}
-    = \frac{\colorbox{AzulClaro}{$5\times9$}}{\colorbox{RojoClaro}{$3\times10$}} =\frac{45}{30} $$
+    \ddfrac{\frac{\colorbox{SkyBlue}{5}}{\colorbox{Thistle}{3}}}{\frac{\colorbox{Thistle}{10}}{\colorbox{SkyBlue}{9}}}
+    = \frac{\colorbox{SkyBlue}{$5\times9$}}{\colorbox{Thistle}{$3\times10$}} =\frac{45}{30} $$
 
 
 
@@ -363,9 +409,9 @@ $\frac{num}{denom}$  en una operación matemática.
         \item \textbf{el numero es decimal exacto.} Tomamos el número sin la
             coma decimal y lo dividimos entre diez elevado al número de
             decimales, y luego simplificamos la fracción. Ejemplos:
-            $$0,46 = \frac{46}{10^2}=\frac{46}{100}=\frac{ \colorbox{RojoClaro}{2}\times 23}{50\times \colorbox{RojoClaro}{2}}  \frac{23}{50} $$
-            $$1,125 = \frac{1125}{10^3}=\frac{1125}{1000}=\frac{3^2\times\colorbox{RojoClaro}{$5^3$}}{2^3\times\colorbox{RojoClaro}{$5^3$}}=\frac{9}{8} $$
-            $$2,4=\frac{24}{10}= \frac{3\times2\times2\times \colorbox{RojoClaro}{2}}{5\times \colorbox{RojoClaro}{2}} = \frac{12}{5}$$
+            $$0,46 = \frac{46}{10^2}=\frac{46}{100}=\frac{ \colorbox{Thistle}{2}\times 23}{50\times \colorbox{Thistle}{2}}  \frac{23}{50} $$
+            $$1,125 = \frac{1125}{10^3}=\frac{1125}{1000}=\frac{3^2\times\colorbox{Thistle}{$5^3$}}{2^3\times\colorbox{Thistle}{$5^3$}}=\frac{9}{8} $$
+            $$2,4=\frac{24}{10}= \frac{3\times2\times2\times \colorbox{Thistle}{2}}{5\times \colorbox{Thistle}{2}} = \frac{12}{5}$$
 
 
         \item \textbf{El numero es periódico puro.}  Tomamos el número sin la coma
@@ -374,8 +420,8 @@ $\frac{num}{denom}$  en una operación matemática.
             tantos nueves como cifras tiene el periodo, y finalmente
             simplificamos hasta hallar la fracción irreductible.
             $$1,\widehat{5} =\frac{15-1}{9} =\frac{14}{9} $$
-            $$ 4,\widehat{789}=\frac{4789-4}{999} =\frac{4785}{999}=\frac{1595\times \colorbox{RojoClaro}{3}}{333\times \colorbox{RojoClaro}{3}} = \frac{1595}{333} $$
-            $$ 11,\widehat{45}=\frac{1145-11}{99}=\frac{1134}{99}=\frac{2\times \colorbox{RojoClaro}{$3^4$}\times7}{ \colorbox{RojoClaro}{$3^2$}\times 11} =\frac{2\times3^2\times7}{11} =\frac{126}{11}$$
+            $$ 4,\widehat{789}=\frac{4789-4}{999} =\frac{4785}{999}=\frac{1595\times \colorbox{Thistle}{3}}{333\times \colorbox{Thistle}{3}} = \frac{1595}{333} $$
+            $$ 11,\widehat{45}=\frac{1145-11}{99}=\frac{1134}{99}=\frac{2\times \colorbox{Thistle}{$3^4$}\times7}{ \colorbox{Thistle}{$3^2$}\times 11} =\frac{2\times3^2\times7}{11} =\frac{126}{11}$$
 
         \item \textbf{El numero es periódico mixto.} Tomamos el número, sin la coma
             decimal y repitiendo el periodo solo una vez.
@@ -384,7 +430,7 @@ $\frac{num}{denom}$  en una operación matemática.
             la parte decimal.
             $$1,2\widehat{31} = \frac{1231-12}{990}= \frac{1219}{990} $$
             $$31,42\widehat{5}=\frac{31425-3142}{900} =\frac{28283}{900} $$
-            $$0.4\widehat{243}=\frac{4243-4}{9990}=\frac{4239}{9990} =\frac{157\times \colorbox{RojoClaro}{$3^3$}}{2\times5\times37\times \colorbox{RojoClaro}{$3^3$}}= \frac{157}{2\times5\times37}= \frac{157}{370} $$
+            $$0.4\widehat{243}=\frac{4243-4}{9990}=\frac{4239}{9990} =\frac{157\times \colorbox{Thistle}{$3^3$}}{2\times5\times37\times \colorbox{Thistle}{$3^3$}}= \frac{157}{2\times5\times37}= \frac{157}{370} $$
     \end{itemize}
 
 
@@ -459,8 +505,8 @@ fenómenos físicos.
             \end{itemize}
             Ejemplos:
             \begin{align*}
-                2 \colorbox{RojoClaro}{35},39\ exp=&+2\\  \colorbox{RojoClaro}{0},12\ exp=&-1\\
-                 \colorbox{RojoClaro}{0,000\ 00}924\ exp=&-6\\ -4 \colorbox{RojoClaro}{500\ 000}\ exp=&+6\\1 \colorbox{RojoClaro}{507800},2\ exp=&+6
+                2 \colorbox{Thistle}{35},39\ exp=&+2\\  \colorbox{Thistle}{0},12\ exp=&-1\\
+                 \colorbox{Thistle}{0,000\ 00}924\ exp=&-6\\ -4 \colorbox{Thistle}{500\ 000}\ exp=&+6\\1 \colorbox{Thistle}{507800},2\ exp=&+6
             \end{align*}
 
 
@@ -487,11 +533,11 @@ fenómenos físicos.
     usar el menor o mayor como la punta de una flecha, así se tiene que:
     $-5<0$ entonces hacia la izquierda y $5>0$ entonces hacia la derecha.
 
-        $$2,3539 \times10^{2}= 2,\colorbox{RojoClaro}{35}39 = 235,39 $$
-        $$1,2 \times10^{-1} = 0\colorbox{RojoClaro}{1},2 = 0,12  $$
-        $$9,24 \times10^{-6}=\text{Completamos con 0 a la izquierda: } 0\colorbox{RojoClaro}{000\ 009},24 =0,000\ 009\ 24  $$
-        $$-4,5 \times10^{6}=\text{Completamos con 0 a la derecha: }-4,\colorbox{RojoClaro}{500\ 000}=-4\ 500\ 000  $$
-        $$1,507\ 800\ 2 \times10^{6}= 1, \colorbox{RojoClaro}{507\ 800}\ 2= 1\ 507\ 800,2  $$
+        $$2,3539 \times10^{2}= 2,\colorbox{Thistle}{35}39 = 235,39 $$
+        $$1,2 \times10^{-1} = 0\colorbox{Thistle}{1},2 = 0,12  $$
+        $$9,24 \times10^{-6}=\text{Completamos con 0 a la izquierda: } 0\colorbox{Thistle}{000\ 009},24 =0,000\ 009\ 24  $$
+        $$-4,5 \times10^{6}=\text{Completamos con 0 a la derecha: }-4,\colorbox{Thistle}{500\ 000}=-4\ 500\ 000  $$
+        $$1,507\ 800\ 2 \times10^{6}= 1, \colorbox{Thistle}{507\ 800}\ 2= 1\ 507\ 800,2  $$
 
 
 
@@ -524,7 +570,7 @@ fenómenos físicos.
     \begin{figure}[htb]
 		\centering
         \caption{Triangulo rectángulo}
-		\includegraphics[ width= 5cm ]{triangulo.png}
+		\includegraphics{../images/triangulo.png}
 		\label{triangulo}
 	\end{figure}
 
@@ -743,3 +789,4 @@ fenómenos físicos.
     falta, paso a paso.
 
 
+\end{document}

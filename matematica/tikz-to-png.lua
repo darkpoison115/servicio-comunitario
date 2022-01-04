@@ -32,7 +32,7 @@ function RawBlock(el)
     -- Alternatively, parse the contained LaTeX now:
     -- return pandoc.read(el.text, 'latex').blocks
   end  
-  local fname = pandoc.sha1(el.text) .. ".png"
+  local fname = "images/" .. pandoc.sha1(el.text) .. ".png"
   if not file_exists(fname) then
     tikz2image(el.text, fname)
   end
