@@ -725,18 +725,130 @@ y de 3 dimensiones, en el origen se ve de la forma:
     un vector perpendicular a los multiplicados y es una base fundamental para
     muchas aplicaciones de la ingenieria, arquitectura y fisica en general.
 
-    Se escribe de la forma: $\vec{r} = \vec{v}\times\vec{u}$, con
-    $\vec{v},\vec{u}$ vectores cualesquiera.
+    Puede escribirse como calculo de determinantes, es lo que se utiliza en su
+    mayoria para calculos de $\mathbb{R}^n$, pero para $\mathbb{R}^3$ se utiliza
+    mucho mas una formula.
 
+    Se escribe de la forma: $\vec{r} = \vec{u}\times\vec{v}$, con
+    $\vec{u},\vec{v}$ vectores cualesquiera.
 
+    y para $\mathbb{R}^3$ especificamente, con $\vec{u}=(u_x,u_y,u_z),
+    \vec{v}=(v_x,v_y,v_z)$ esto es:
 
+    $$\vec{r} = \vec{u}\times\vec{v} =
+        (u_y\cdot v_z- u_z\cdot v_y)\hat{\imath}
+        - (u_x\cdot v_z- u_z\cdot v_x)\hat{\jmath}
+        +  (u_x\cdot v_y- u_y\cdot v_x)\hat{k}
+    $$
 
+    Esto significa que con $\vec{r} = (r_x,r_y,r_z)$, las componentes del vector
+    son :
+
+    \begin{align*}
+        \vec{r_x}& = (u_y\cdot v_z- u_z\cdot v_y)\\
+        \vec{r_y}&= -(u_x\cdot v_z- u_z\cdot v_x)\\
+        \vec{r_z}&= (u_x\cdot v_y- u_y\cdot v_x)
+    \end{align*}
+
+    Ejemplos:
+
+    \begin{align*}
+        \vec{u}& =(3,4,7)   \ \ ;\ \ \  \vec{v} =(-2,13,9)		\\
+        \vec{r_x}& = (4\cdot 9- 7\cdot 13) = -55 \\
+        \vec{r_y}&= -(3\cdot 9- 7\cdot -2)= -41 \\
+        \vec{r_z}&= (3\cdot 13- 4\cdot -2) = 47 \\
+        \vec{r_z}&= \vec{u}\times\vec{v} = (-55,-41,47)
+    \end{align*}
+
+    \begin{align*}
+        \vec{u}& =(3,4,7)  \ \ ;\ \ \  \vec{v} =(32,-4,-22)		\\
+        \vec{r_x}& = (4\cdot -22 - 7\cdot -4)= -60\\
+        \vec{r_y}&= -(3\cdot -22- 7\cdot 32) =290\\
+        \vec{r_z}&= (3\cdot -4- 4\cdot 32) = -140\\
+        \vec{r_z}&= \vec{u}\times\vec{v} = (-60,-290,-140)
+    \end{align*}
+
+    \begin{align*}
+        \vec{u}& =(-2,13,9)  \ \ ;\ \ \   \vec{v} =(32,-4,-22)		\\
+        \vec{r_x}& = (13\cdot -22- 9\cdot -4)= -250\\
+        \vec{r_y}&= -(-2\cdot -22- 9\cdot 32)= 244\\
+        \vec{r_z}&= (-2\cdot -4- 13\cdot 32) =-408\\
+        \vec{r_z}&= \vec{u}\times\vec{v} = (-250, 244, -408)
+    \end{align*}
 
 
 
 
 \subsection{matrices}
-\begin{itemize}
-    \item cuadradas
-    \item nxm
-\end{itemize}
+
+una matriz es un arreglo bidimensional de números. Es decir, es una ampliacion de
+los vectores con 2 dimensiones, usualmente a las operaciones que se pueden hacer
+con las matrices se le conoce como algebra matricial. Cabe resaltar que tambien
+existes arreglos de mas dimensiones llamados tensores que son tema de matematicas
+muy avanzadas.
+
+Hay 2 tipos de matrices, las cuadradas, conocidas como orden $n\times n$ las
+cuales tienen el mismo numero de filas y columnas, $n$
+y las rectangulares o mejor conocidas como de orden $n\times m$ donde $n$
+representa la cantidad de filas y $m$ la cantidad de columnas. donde:
+$ 1\leq  n < \infty$ y  $ 1\leq m < \infty$.
+En el caso de que la matriz tenga 1 fila o 1 columna es un vector,
+
+Una matriz se suele escribir por una letra mayuscula y sus componentes con la
+misma letra minuscula y dos subindices, uno para las filas y otro para las
+columnas tipicamente simbolizado por las letras $ij$($a_{filas\ columnas}=
+a_{i\ j}$). Es decir, tienen la forma:
+
+\begin{*equation}
+    A =
+    \begin{bmatrix}
+        a_{1\ 1} & a_{1\ 2} & \cdots & a_{1\ m}\\
+        a_{2\ 1} & a_{2\ 2} & \cdots & a_{2\ m}\\
+        \vdots & \vdots & \ddots & \vdots\\
+        a_{n\ 1} & a_{n\ 2} & \cdots & a_{n\ m}\\
+    \end{bmatrix}
+\end{*equation}
+
+
+En las matrices se definen 3 operaciones basicas, estas son suma algebraica,
+multiplicacion por un escalar y multiplicacion entre matrices. \textbf{La division
+no esta definida}, ademas, existen muchas otras aplicaciones que se pueden
+realizar con matrices como lo son la resolucion de sistemas de ecuaciones y
+todo lo que esto implica.
+
+\subsubsection*{Multiplicacion por escalar} \label{Multiplicacion_escalar}
+
+Este tipo de operacion no tiene limitaciones en cuanto al tamaño de las matrices
+y esta definida de igual forma que con los vectores, es decir, el escalar que
+multiplica a la matriz multiplica a todos los elementos internos de la matriz.
+
+
+
+
+\subsubsection*{Suma de matrices} \label{Sumadematrices}
+
+Esta operacion esta limitada a las matrices de igual orden, es decir ambas
+matrices deben de ser orden $n\times m$ para que la operacion pueda ser realizada
+y esto es porque esta definida de forma que la suma de las matrices da como
+resultado una nueva matriz del mismo tamaño ($n\times m) en donde cada elemento
+es la suma de los elementos que estaban en la misma posicion que el resultante.
+Igual que la suma de vectores.
+
+
+\subsubsection*{Multiplicacion de matrices} \label{Multiplicaciondematrices}
+
+Esta operacion no es conmutativa y esta sujeta a la condicion de que el
+numero de columnas de la primera matriz debe ser igual al numero de filas de la
+segunda matriz y da como resultado una matriz que tiene la cantidad de fiulas de
+la primera matriz y la cantidad de columnas de la segunda matriz.
+
+
+
+
+
+
+
+
+
+
+
